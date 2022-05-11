@@ -1,0 +1,54 @@
+
+body {
+    footer {
+        .footer {
+            display: grid;
+            grid-template-columns: 10% 1fr 1fr 1fr 1fr 10% ;
+            grid-template-rows: repeat(1, 1fr);
+            background-color: $color1;
+            height: 150px;
+            color: gray;
+            border-bottom: 170px solid $color1;
+            margin-top: $sizeL;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                list-style: none;
+                align-items: center;
+            }
+            .about {
+                display: grid;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding: 50px;
+            }
+            .news {
+                display: grid;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding: 50px;
+            }
+            .Resources {
+                display: grid;
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding: 50px;
+            }
+            .social {
+                display: grid;
+                grid-column-start: 5;
+                grid-column-end: 6;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding: 24px;
+            }
+        }
+    }
+}

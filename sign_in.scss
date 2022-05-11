@@ -1,0 +1,42 @@
+@import 'base';
+@import 'colors';
+@import 'typography';
+@import 'sizes';
+@import 'spacing';
+
+body {
+    display: flex;
+    justify-content: center;
+    background: url(./img/home2.jpg);
+    .box {
+        width: 50%;
+        height: 65%;
+        background-image: linear-gradient( #C4D3DF, #85b8e2);;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        .banner {
+            size: 40%;
+            background: url("./img/sign-up3.jpg") center no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 40%;}
+            .form {
+                size: 60%;
+                height: 100%;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            form {
+                display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }}
+      }
+}

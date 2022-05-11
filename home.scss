@@ -1,0 +1,305 @@
+@import 'base';
+@import 'colors';
+@import 'typography';
+@import 'sizes';
+@import 'spacing';
+@import 'header';
+@import 'footer';
+
+body {
+    .header_hero {
+        width: 100%;
+        height: 50px;
+    }
+    .hero {
+        padding: $sizeXL;
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 10% 60% 20% 10%;
+        grid-template-rows: repeat(5, 1fr);
+        .hero_image {
+            background: url("./img/game.starwars1.jpg") no-repeat;
+            background-size: 100% 1100px;
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 5px solid $color2;
+            border-radius: $sizeL;
+        }
+        .hero_text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: $color4;
+            .text1{
+                width: 85%;
+                height: 75%;
+            }
+            .text2{
+                width: 85%;
+                height: 10%;
+            }
+            .text3 {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
+            }
+            .text3_1 {
+                background-color: $color4;
+                color: $color5;
+                padding: 20px;
+                border-radius: $sizeS;
+                margin-bottom: 10px;
+            }
+            .text3_2 {
+                margin: 0 0 10px 10px;
+            }
+        }
+        .hero_list {
+            background-color: $color2;
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 5px solid $color2;
+            border-radius: $sizeM;
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                .game_list1 {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    margin-left: -30px;
+                    color: $color3;
+                    border-radius: $sizeM;
+                    img {
+                        border-radius: $sizeS;
+                        margin-right: 10px;
+                    }
+                    
+                }
+                }
+        }
+    }
+    .gamepack {
+        padding: $sizeXL;
+        width: 100%;
+        height: 1100px;
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: repeat(4, 1fr);
+        .gamepack1 {
+            background: url("./img/game.tombrider.jpg") no-repeat;
+            background-size: 100% 500px;
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border: 5px solid $color2;
+            border-radius: $sizeL;
+            margin-right: 10px;
+        }
+        .gamepack1text {
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            color: $color3;
+            text-align: center;
+            .textg1 {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 10px;
+                
+            }
+            .textg1_1 {
+                background-color: $color6;
+                color: $color4;
+                padding: 20px;
+                border-radius: $sizeS;
+                margin-bottom: 10px;
+            }
+            .textg1_2 {
+                margin: 0 0 10px 10px;
+            }
+        }
+        .gamepack2 {
+            background: url("./img/game.assasinscreed.jpg") no-repeat;
+            background-size: 100% 490px;
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border: 5px solid $color2;
+            border-radius: $sizeL;
+            margin-left: 10px;
+        }
+        .gamepack2text {
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            color: $color3;
+            text-align: center;
+            .textg2 {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 10px;
+                
+            }
+            .textg2_1 {
+                background-color: $color6;
+                color: $color4;
+                padding: 20px;
+                border-radius: $sizeS;
+                margin-bottom: 10px;
+            }
+            .textg2_2 {
+                margin: 0 0 10px 10px;
+            }
+        }
+    }
+    .new_top_soon {
+        padding: $sizeXL;
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+        grid-template-rows: repeat(1, 1fr);
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: flex-start;
+            .header_newtopsoon {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $color4;
+                .more {
+                    background-color: $color2;
+                    color: $color4;
+                    border-radius: $sizeS;
+                    border: 1px solid $color4;
+                    padding: 10px;
+                    margin-right: 30px;
+                }
+            }
+            li {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+                align-items: center;
+                color: $color3;
+                padding: $sizeS;
+                margin-left: -15px;
+                height: 100%;
+                width: 100%;
+
+                .img_game {
+                    width: 25%;
+                    margin-right: $sizeS;
+                    img {
+                        width: 110px;
+                        height: 160px;
+                        border-radius: $sizeS;
+                    }
+                }
+                .text_game {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    width: 75%;
+                    height: 100%;
+                    color: $color3;
+                }
+            }
+        }
+        .new {
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-right: 1px solid $color3;
+        }
+        .top {
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-right: 1px solid $color3;
+        }
+        .soon {
+            display: grid;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        }
+        .banner {
+        padding: $sizeXL;
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 10% 50% 30% 10%;
+        grid-template-rows: repeat(1, 1fr);
+        .banner_img {
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background: url("./img/game.banner.png") no-repeat;
+            background-size: 100%;
+            border-radius: $sizeL;
+        }
+        .banner_text {
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            color: $color3;
+            .learn {
+                background-color: $color4;
+                    color: $color5;
+                    border-radius: $sizeS;
+                    border: 1px solid $color4;
+                    padding: 15px;
+                    margin: 20px;
+            }
+        }
+        }
+    }

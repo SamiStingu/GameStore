@@ -1,0 +1,35 @@
+@import url('http://fonts.cdnfonts.com/css/brutal');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+@import 'sizes';
+
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: $large;
+}
+
+h2 {
+    font-size: $medium;
+}
+
+h3 {
+    font-size: $small;
+}
+h4 {
+    font-size: 15px;
+}
+h5 {
+    font-size: 13px;
+}
+
+p,li,a,button {
+    font-size: $extrasmall;
+}

@@ -1,0 +1,121 @@
+@import url("http://fonts.cdnfonts.com/css/brutal");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+p, li, a, button {
+  font-size: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(./img/home2.jpg);
+}
+
+body .box {
+  width: 50%;
+  height: 65%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C4D3DF), to(#85b8e2));
+  background-image: linear-gradient(#C4D3DF, #85b8e2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .box .banner {
+  size: 40%;
+  background: url("./img/sign-up3.jpg") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+}
+
+body .box .form {
+  size: 60%;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .box .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=sign_in.css.map */

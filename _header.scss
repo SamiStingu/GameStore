@@ -1,0 +1,40 @@
+
+
+body {
+    background-color: $color2;
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: $color1;
+        position: fixed;
+        width: 100%;
+        .search {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            .search_bar {
+                margin: 0 $sizeL;
+                border-radius: $sizeS;
+                background-color: #121212;
+                width: 400px;
+                height: 30px;
+                color: $color3;
+            }
+        }
+        .nav {
+            ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            li {
+                margin: 10px $sizeM;
+                color: $color3;
+            }
+            }
+        }
+    }
+}
