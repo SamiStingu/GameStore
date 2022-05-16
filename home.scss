@@ -5,6 +5,8 @@
 @import 'spacing';
 @import 'header';
 @import 'footer';
+@import 'hover';
+@import 'animations';
 
 body {
     .header_hero {
@@ -87,11 +89,46 @@ body {
                     margin-left: -30px;
                     color: $color3;
                     border-radius: $sizeM;
+                    padding: 10px;
                     img {
                         border-radius: $sizeS;
                         margin-right: 10px;
                     }
                     
+                }
+                .game_list1_container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+                    text-align: center;
+                    align-items: center;
+                    width: auto;
+                    height: 135px;
+                    padding: 10px;
+                   
+                    border-radius: $sizeM;
+                    .game_list1_image {
+                        position: absolute;
+                        width: 130px;
+                        height: 110px;
+                        margin: 5px;
+                        margin-left: 15px;
+                        img {
+                            border-radius: $sizeS;
+                            
+
+                        }
+                    }
+                    .game_list1_text {
+                        position: absolute;
+                        margin-left: 60px;
+                        padding: 40px;  
+                        width: 300px;                
+                    }
+                    .game_list1_background {
+                        width: 350px;
+                    }
                 }
                 }
         }
@@ -201,6 +238,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 color: $color4;
+                padding: $sizeS;
                 .more {
                     background-color: $color2;
                     color: $color4;
@@ -220,6 +258,7 @@ body {
                 margin-left: -15px;
                 height: 100%;
                 width: 100%;
+                border-radius: $sizeM;
 
                 .img_game {
                     width: 25%;
@@ -303,4 +342,5 @@ body {
             }
         }
         }
+    
     }

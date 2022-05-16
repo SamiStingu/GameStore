@@ -1,0 +1,139 @@
+.gray_background1 {
+    width: 100%;
+    background-color: $color1;
+    animation-name: gray_background1;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.gray_background2 {
+    background-color: $color1;
+    animation-name: gray_background2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.gray_background3 {
+    background-color: $color1;
+    animation-name: gray_background3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.gray_background4 {
+    background-color: $color1;
+    animation-name: gray_background4;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.gray_background5 {
+    background-color: $color1;
+    animation-name: gray_background5;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gray_background1 {
+    0% {
+        width: 0%;
+        padding: 0;
+    }
+    20% {
+        width: 100%;
+        padding: 0;
+    }
+    21% {
+        width: 0%;
+        padding: 0;
+    }
+    100% {
+        width: 0%;
+        padding: 0;
+    }
+  
+}
+@keyframes gray_background2 {
+    0% {
+        width: 0%;
+        padding: 0;
+    }
+    20% {
+        width: 0%;
+        padding: 0;
+    }
+    40% {
+        width: 100%;
+        padding: 0;
+    }
+    41% {
+        width: 0%;
+        padding: 0;
+    }
+    100% {
+        width: 0%;
+        padding: 0;
+    }
+  
+}
+@keyframes gray_background3 {
+    0% {
+        width: 0%;
+        padding: 0;
+    }
+    40% {
+        width: 0%;
+        padding: 0;
+    }
+    60% {
+        width: 100%;
+        padding: 0;
+    }
+    61% {
+        width: 0%;
+        padding: 0;
+    }
+    100% {
+        width: 0%;
+        padding: 0;
+    }
+  
+}
+@keyframes gray_background4 {
+    0% {
+        width: 0%;
+        padding: 0;
+    }
+    60% {
+        width: 0%;
+        padding: 0;
+    }
+    80% {
+        width: 100%;
+        padding: 0;
+    }
+    81% {
+        width: 0%;
+        padding: 0;
+    }
+    100% {
+        width: 0%;
+        padding: 0;
+    }
+  
+}
+@keyframes gray_background5 {
+    0% {
+        width: 0%;
+        padding: 0;
+    }
+    80% {
+        width: 0%;
+        padding: 0;
+    }
+    99% {
+        width: 100%;
+        padding: 0;
+    }
+    100% {
+        width: 0%;
+        padding: 0;
+    }
+  
+}
