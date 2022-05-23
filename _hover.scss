@@ -50,3 +50,7 @@
     background-color: $color1 !important;
     cursor: pointer;
 }
+.submit:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px black) brightness(115%);
+}
