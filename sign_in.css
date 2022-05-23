@@ -49,6 +49,78 @@ p, li, a, button {
   font-size: 10px;
 }
 
+.header1_li2 {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  background-color: #0074E4;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  top: auto;
+  bottom: 0;
+}
+
+.header1_li1:hover .header1_li2 {
+  height: 7px;
+  top: 0;
+  bottom: auto;
+}
+
+.opacity:hover {
+  opacity: 50%;
+}
+
+.white_color:hover {
+  color: white;
+}
+
+.white_color:hover:hover h1 {
+  color: white;
+}
+
+.white_color:hover:hover h2 {
+  color: white;
+}
+
+.white_color:hover:hover h3 {
+  color: white;
+}
+
+.white_color:hover:hover h4 {
+  color: white;
+}
+
+.white_color:hover:hover h5 {
+  color: white;
+}
+
+.game_list1:hover {
+  background-color: #2A2A2A;
+  cursor: pointer;
+}
+
+.game_list1:hover:hover img {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.game_image:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  cursor: pointer;
+}
+
+.more:hover {
+  background-color: #2A2A2A !important;
+  cursor: pointer;
+}
+
+.submit:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 3px black) brightness(115%);
+          filter: drop-shadow(0 0 3px black) brightness(115%);
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +151,7 @@ body .box {
 
 body .box .banner {
   size: 40%;
-  background: url("./img/sign-up3.jpg") center no-repeat;
+  background: url("./img/sign-in22.jpg") center no-repeat;
   background-size: cover;
   height: 100%;
   width: 40%;
@@ -104,6 +176,17 @@ body .box .form {
           justify-content: center;
 }
 
+body .box .form h1 {
+  margin-bottom: 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+  background-image: url("./img/sign-in22.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 body .box .form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,5 +201,61 @@ body .box .form form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body .box .form form div {
+  padding: 15px;
+  font-size: 13px;
+}
+
+body .box .form form div input {
+  border: none;
+  border-bottom: 2px solid #121212;
+  background-color: transparent;
+}
+
+body .box .form form div label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  background-image: url("./img/sign-in22.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body .box .form form #submit {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ddb83e), to(#eb972a));
+  background-image: linear-gradient(#ddb83e, #eb972a);
+  border: transparent;
+  border-radius: 5px;
+  padding: 11px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+body .box .form form .signup {
+  margin-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0px;
+  background-image: url("./img/sign-in22.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid #121212;
+}
+
+body .box .form .social {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=sign_in.css.map */

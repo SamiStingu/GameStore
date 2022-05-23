@@ -3,6 +3,7 @@
 @import 'typography';
 @import 'sizes';
 @import 'spacing';
+@import 'hover';
 
 body {
     display: flex;
@@ -12,7 +13,7 @@ body {
     .box {
         width: 50%;
         height: 65%;
-        background-image: linear-gradient( #C4D3DF, #85b8e2);;
+        background-image: linear-gradient( #95dad4, #6ab099, );
         position: absolute;
         top: 50%;
         left: 50%;
@@ -22,7 +23,7 @@ body {
     
        .banner {
         size: 40%;
-        background: url("./img/sign-up3.jpg") center no-repeat;
+        background: url("./img/sign-in23.jpg") center no-repeat;
         background-size: cover;
         height: 100%;
         width: 40%;
@@ -38,7 +39,7 @@ body {
             
         
       }
-       .sign-up {
+      .form {
         size: 60%;
         height: 100%;
         width: 60%;
@@ -46,17 +47,68 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        h1 {
+            margin-top: 20%;
+            margin-bottom: 20%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            letter-spacing: 3px;
+            background-image: url("./img/sign-in22.jpg");
+            background-size: cover  ;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
-        title {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
+    form {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+        padding: 8px;
+        font-size: 12px;
+        input {
+            border: none ;
+            border-bottom: 2px solid $color2;
+            background-color: transparent;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            letter-spacing: 1px;
+            background-image: url("./img/sign-in22.jpg");
+            background-size: 1000%  ;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
+    }
+    #submit {
+        background-image: linear-gradient( #da5656, #df7341);
+        border: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        font-size: 18px;   
+    }
+    .signup {
+        margin-top: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        letter-spacing: 0px;
+        background-image: url("./img/sign-in22.jpg");
+        background-size: cover  ;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 1px solid $color2;
+    }
+    }
+    .social {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
     }
 }
       
