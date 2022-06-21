@@ -146,7 +146,7 @@ body .header2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9;
 }
 
 body .header2 .nav3 {
@@ -368,6 +368,24 @@ body footer .footer .social {
 .more:hover {
   background-color: #2A2A2A !important;
   cursor: pointer;
+}
+
+.submit:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 3px black) brightness(115%);
+          filter: drop-shadow(0 0 3px black) brightness(115%);
+}
+
+.text3_1:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 15px black) brightness(115%);
+          filter: drop-shadow(0 0 15px black) brightness(115%);
+}
+
+.text3_2:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(215%);
+          filter: drop-shadow(0 0 5px black) brightness(215%);
 }
 
 .gray_background1 {
@@ -635,6 +653,465 @@ body footer .footer .social {
   }
 }
 
+.hero_image2 {
+  background: url("./img/game.tina3.jpg") no-repeat;
+  background-size: 100% 730px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 5;
+  border: 5px solid #121212;
+  border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: hero_games2;
+          animation-name: hero_games2;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hero_text2 {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero_text2 .text1 {
+  width: 75%;
+  height: 65%;
+  text-align: center;
+}
+
+.hero_text2 .text2 {
+  width: 85%;
+  height: 15%;
+}
+
+.hero_text2 .text3 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_text2 .text3_1 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hero_text2 .text3_2 {
+  margin: 0 0 10px 10px;
+}
+
+.hero_image3 {
+  background: url("./img/game.subnautica1.jpg") no-repeat;
+  background-size: 100% 715px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 5;
+  border: 5px solid #121212;
+  border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: hero_games3;
+          animation-name: hero_games3;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hero_text3 {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero_text3 .text1 {
+  width: 75%;
+  height: 40%;
+  text-align: center;
+}
+
+.hero_text3 .text2 {
+  width: 85%;
+  height: 20%;
+}
+
+.hero_text3 .text3 {
+  width: 60%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_text3 .text3_1 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hero_text3 .text3_2 {
+  margin: 0 0 10px 10px;
+}
+
+.hero_image4 {
+  background: url("./img/game.naraka3.jpg") no-repeat;
+  background-size: 100% 715px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 5;
+  border: 5px solid #121212;
+  border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: hero_games4;
+          animation-name: hero_games4;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hero_text4 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero_text4 .text1 {
+  width: 75%;
+  height: 65%;
+  text-align: center;
+}
+
+.hero_text4 .text2 {
+  width: 85%;
+  height: 18%;
+}
+
+.hero_text4 .text3 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_text4 .text3_1 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hero_text4 .text3_2 {
+  margin: 0 0 10px 10px;
+}
+
+.hero_image5 {
+  background: url("./img/game.vampire3.jpg") no-repeat;
+  background-size: 100% 715px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 5;
+  border: 5px solid #121212;
+  border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: hero_games5;
+          animation-name: hero_games5;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hero_text5 {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero_text5 .text1 {
+  width: 75%;
+  height: 60%;
+  text-align: center;
+}
+
+.hero_text5 .text2 {
+  width: 85%;
+  height: 20%;
+}
+
+.hero_text5 .text3 {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_text5 .text3_1 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hero_text5 .text3_2 {
+  margin: 0 0 10px 10px;
+}
+
+@-webkit-keyframes hero_games {
+  0% {
+    z-index: 8;
+  }
+  20% {
+    z-index: 8;
+  }
+  21% {
+    z-index: 7;
+  }
+  100% {
+    z-index: 4;
+  }
+}
+
+@keyframes hero_games {
+  0% {
+    z-index: 8;
+  }
+  20% {
+    z-index: 8;
+  }
+  21% {
+    z-index: 7;
+  }
+  100% {
+    z-index: 4;
+  }
+}
+
+@-webkit-keyframes hero_games2 {
+  0% {
+  }
+  21% {
+    z-index: 7;
+  }
+  40% {
+    z-index: 7;
+  }
+  41% {
+    z-index: 6;
+  }
+  100% {
+  }
+}
+
+@keyframes hero_games2 {
+  0% {
+  }
+  21% {
+    z-index: 7;
+  }
+  40% {
+    z-index: 7;
+  }
+  41% {
+    z-index: 6;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes hero_games3 {
+  0% {
+  }
+  41% {
+    z-index: 6;
+  }
+  60% {
+    z-index: 6;
+  }
+  61% {
+    z-index: 5;
+  }
+  100% {
+  }
+}
+
+@keyframes hero_games3 {
+  0% {
+  }
+  41% {
+    z-index: 6;
+  }
+  60% {
+    z-index: 6;
+  }
+  61% {
+    z-index: 5;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes hero_games4 {
+  0% {
+  }
+  61% {
+    z-index: 5;
+  }
+  80% {
+    z-index: 5;
+  }
+  81% {
+    z-index: 4;
+  }
+  100% {
+  }
+}
+
+@keyframes hero_games4 {
+  0% {
+  }
+  61% {
+    z-index: 5;
+  }
+  80% {
+    z-index: 5;
+  }
+  81% {
+    z-index: 4;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes hero_games5 {
+  0% {
+  }
+  81% {
+    z-index: 4;
+  }
+  99% {
+    z-index: 4;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
+@keyframes hero_games5 {
+  0% {
+  }
+  81% {
+    z-index: 4;
+  }
+  99% {
+    z-index: 4;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
 body .header_hero {
   width: 100%;
   height: 50px;
@@ -666,6 +1143,13 @@ body .hero .hero_image {
   grid-row-end: 5;
   border: 5px solid #121212;
   border-radius: 30px;
+  position: relative;
+  -webkit-animation-name: hero_games;
+          animation-name: hero_games;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 body .hero .hero_text {
@@ -1140,5 +1624,111 @@ body .banner .banner_text .learn {
   border: 1px solid white;
   padding: 15px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  body .hero .hero_image {
+    visibility: hidden;
+  }
+  body .hero .hero_image2 {
+    visibility: hidden;
+  }
+  body .hero .hero_image3 {
+    visibility: hidden;
+  }
+  body .hero .hero_image4 {
+    visibility: hidden;
+  }
+  body .hero .hero_image5 {
+    visibility: hidden;
+  }
+  body .hero .hero_list {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 992px) {
+  body .hero .hero_image {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: 100% 900px;
+    height: 600px;
+  }
+  body .hero .hero_image .hero_text {
+    width: 100%;
+  }
+  body .hero .hero_image2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: 100% 600px;
+    height: 600px;
+  }
+  body .hero .hero_image2 .hero_text2 {
+    width: 100%;
+  }
+  body .hero .hero_image3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: 100% 600px;
+    height: 600px;
+  }
+  body .hero .hero_image3 .hero_text3 {
+    width: 100%;
+  }
+  body .hero .hero_image3 .hero_text3 .text1 {
+    margin-bottom: 20%;
+  }
+  body .hero .hero_image3 .hero_text3 .text2 {
+    margin-bottom: -12%;
+  }
+  body .hero .hero_image3 .hero_text3 .text3 {
+    margin-bottom: -8%;
+  }
+  body .hero .hero_image4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: 100% 600px;
+    height: 600px;
+  }
+  body .hero .hero_image4 .hero_text4 {
+    width: 100%;
+  }
+  body .hero .hero_image5 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: 100% 600px;
+    height: 600px;
+  }
+  body .hero .hero_image5 .hero_text5 {
+    width: 100%;
+  }
+  body .hero_list {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=home.css.map */

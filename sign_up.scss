@@ -111,4 +111,30 @@ body {
 
     }
 }
+@media only screen and (max-width: 650px) {
+    body {
+        .box {
+            width: 80%;
+            .form {
+                width: 100%;
+                h1 {
+                    font-size: $sizeL;
+                }
+            }
+           .banner {
+               width: 0%;
+           }
+        }
+    }
+   } 
+@media only screen and (min-width: 650px) and (max-width: 992px)  {
+    body {
+        .box {
+            width: 80%;
+           .banner {
+               width: 40%;
+           }
+        }
+    }
+   } 
       

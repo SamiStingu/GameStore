@@ -121,6 +121,18 @@ p, li, a, button {
           filter: drop-shadow(0 0 3px black) brightness(115%);
 }
 
+.text3_1:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 15px black) brightness(115%);
+          filter: drop-shadow(0 0 15px black) brightness(115%);
+}
+
+.text3_2:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(215%);
+          filter: drop-shadow(0 0 5px black) brightness(215%);
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,5 +269,29 @@ body .box .form .social {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media only screen and (max-width: 650px) {
+  body .box {
+    width: 80%;
+  }
+  body .box .form {
+    width: 100%;
+  }
+  body .box .form h1 {
+    font-size: 30px;
+  }
+  body .box .banner {
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 992px) {
+  body .box {
+    width: 80%;
+  }
+  body .box .banner {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=sign_in.css.map */
