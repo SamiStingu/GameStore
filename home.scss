@@ -6,7 +6,7 @@
 @import 'header';
 @import 'footer';
 @import 'hover';
-@import 'animations';
+@import 'animations_hero';
 
 body {
     .header_hero {
@@ -31,6 +31,10 @@ body {
             grid-row-end: 5;
             border: 5px solid $color2;
             border-radius: $sizeL;
+            position: relative;
+            animation-name: hero_games;
+            animation-duration: 50s;
+            animation-iteration-count: infinite;
         }
         .hero_text {
             width: 50%;
@@ -344,3 +348,100 @@ body {
         }
     
     }
+    @media only screen and (max-width: 650px) {
+        body {
+            .hero {
+             .hero_image {
+                visibility: hidden;
+             }
+             .hero_image2 {
+                visibility: hidden;
+             }
+             .hero_image3 {
+                visibility: hidden;
+             }
+             .hero_image4 {
+                visibility: hidden;
+             }
+             .hero_image5 {
+                visibility: hidden;
+             }
+             .hero_list {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+             }
+            }
+       } }
+    @media only screen and (min-width: 650px) and (max-width: 992px)  {
+        body {
+            .hero {
+             .hero_image {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+                background-size: 100% 900px;
+                height: 600px;
+               .hero_text {
+                width: 100%;
+               }   }
+               .hero_image2 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+                background-size: 100% 600px;
+                height: 600px;
+               .hero_text2 {
+                width: 100%;
+               }   }
+               .hero_image3 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+                background-size: 100% 600px;
+                height: 600px;
+               .hero_text3 {
+                width: 100%;
+                .text1 {
+                    margin-bottom: 20%;
+                }
+                .text2 {
+                    margin-bottom: -12%;
+                }
+                .text3 {
+                    margin-bottom: -8%;
+                }
+               }   }
+               .hero_image4 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+                background-size: 100% 600px;
+                height: 600px;
+               .hero_text4 {
+                width: 100%;
+               }   }
+               .hero_image5 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+                background-size: 100% 600px;
+                height: 600px;
+               .hero_text5 {
+                width: 100%;
+               }   }
+             }
+             
+             .hero_list {
+              visibility: hidden;
+             }
+            }
+       }
+
+       
