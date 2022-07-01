@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body onload="generateGames(games)">
+    <div class="header1">
+        <div class="nav1">
+            <nav>
+                <ul>
+                    <a href=""><img src="img/logo4.png" width="50px" alt="logo"></a>
+                    <div class="header1_li1"><a href="" style="text-decoration: none;">
+                            <li>
+                                <p>STORE</p>
+                            </li>
+                        </a>
+                        <div class="header1_li2"></div>
+                    </div>
+                    <div class="header1_li1"><a href="" style="text-decoration: none;">
+                            <li>
+                                <p>FAQ</p>
+                            </li>
+                        </a>
+                        <div class="header1_li2"></div>
+                    </div>
+                    <div class="header1_li1"><a href="" style="text-decoration: none;">
+                            <li>
+                                <p>HELP</p>
+                            </li>
+                        </a>
+                        <div class="header1_li2"></div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav2">
+            <nav>
+                <ul>
+                    <div><a href="">
+                            <li><img src="img/logo33.png" width="15px" alt="logo"></li>
+                        </a></div>
+                    <div class="opacity"><a href="sign_up.html" style="text-decoration: none;">
+                            <li>
+                                <p>REGISTER</p>
+                            </li>
+                        </a></div>
+                    <div class="opacity"><a href="sign_in.html" style="text-decoration: none;">
+                            <li>
+                                <p>LOG IN</p>
+                            </li>
+                        </a></div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header2">
+        <div class="nav3">
+            <nav>
+                <ul>
+                    <div><input type="search" name="search" placeholder="Search" style="color: white"></div>
+                    <div class="white_color"><a href="" style="text-decoration: none;">
+                            <li>
+                                <h5>Discover</h5>
+                            </li>
+                        </a></div>
+                    <div class="white_color"><a href="" style="text-decoration: none;">
+                            <li>
+                                <h5>Browse</h5>
+                            </li>
+                        </a></div>
+                    <div class="white_color"><a href="" style="text-decoration: none;">
+                            <li>
+                                <h5>News</h5>
+                            </li>
+                        </a></div>
+                </ul>
+            </nav>
+            <div class="nav4">
+                <nav>
+                    <ul>
+                        <div class="white_color"><a href="cart.html" style="text-decoration: none;">
+                                <li>
+                                    <h5>Wishlist</h5>
+                                </li>
+                            </a></div>
+                        <div class="white_color"><a href="cart.html" style="text-decoration: none;">
+                                <li>
+                                    <h5>Cart </h5>
+                                </li>
+                            </a></div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="product_container">
+        <section id="filter_section">
+            <div id="filter_section_header">
+                <h2>Filters</h3>
+            </div>
+            <div id="filter_section_search">
+                <div><input type="search" name="search" placeholder="Keywords" id="filter_search" style="color: white">
+                </div>
+            </div>
+            <div id="filter_section_price">
+                <button type="button" class="collapsible">
+                    <h3>Price</h3>
+                </button>
+                <div id="content_price" class="content">
+                    <ul>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Free</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Under 40 RON</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Under 100 RON</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>100 Ron and above</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="filter_section_genre">
+                <button type="button" class="collapsible">
+                    <h3>Genre</h3>
+                </button>
+                <div id="content_genre" class="content">
+                    <ul>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Action</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Adventure</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Exploration</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Indie</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Stealth</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="filter_section_rating">
+                <button type="button" class="collapsible">
+                    <h3>Rating</h3>
+                </button>
+                <div id="content_rating" class="content">
+                    <ul>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Best rated</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter_element white_color">
+                                <h4>Worst rated</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="product_section">
+            <section id="button_section">
+                <div class="sort_button"><label for="sorting">Show:</label>
+                    <select name="sort" id="sorting">
+                        <option value=""> All</option>
+                        <option value="asc">A - Z</option>
+                        <option value="dsc">Z - A</option>
+                        <option value="price_asc">Rising Price</option>
+                        <option value="price_dsc">Decreasing Price</option>
+                    </select></div>
+                <div>
+                    <button type="button" class="game_button">
+                        <h4>Previous</h4>
+                    </button>
+                    <button type="button" class="game_button">
+                        <h4>Next</h4>
+                    </button>
+                </div>
+            </section>
+            <section id="game_section"></section>
+        </section>
+    </section>
+    <script src="collapsible.js"></script>
+    <script src="fetch-games.js" type="module"></script>
+</body>
+
+</html>

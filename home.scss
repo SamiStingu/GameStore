@@ -18,7 +18,7 @@ body {
         width: 100%;
         height: 1000px;
         display: grid;
-        grid-template-columns: 10% 60% 20% 10%;
+        grid-template-columns: 1fr 60% 20% 1fr;
         grid-template-rows: repeat(5, 1fr);
         margin-top: -80px;
         .hero_image {
@@ -142,11 +142,11 @@ body {
         width: 100%;
         height: 1100px;
         display: grid;
-        grid-template-columns: 10% 40% 40% 10%;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 10% 25% 25% 25% 10%;
+        grid-template-rows: repeat(5, 1fr);
         .gamepack1 {
             background: url("./img/game.tombrider.jpg") no-repeat;
-            background-size: 100% 500px;
+            background-size: 100% 400px;
             display: grid;
             grid-column-start: 2;
             grid-column-end: 3;
@@ -185,7 +185,7 @@ body {
         }
         .gamepack2 {
             background: url("./img/game.assasinscreed.jpg") no-repeat;
-            background-size: 100% 490px;
+            background-size: 100% 390px;
             display: grid;
             grid-column-start: 3;
             grid-column-end: 4;
@@ -219,6 +219,45 @@ body {
                 margin-bottom: 10px;
             }
             .textg2_2 {
+                margin: 0 0 10px 10px;
+            }
+        }
+        .gamepack3 {
+            background: url("./img/game.battlefield.jpg") no-repeat;
+            background-size: 100% 400px;
+            display: grid;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border: 5px solid $color2;
+            border-radius: $sizeL;
+            margin-left: 10px;
+        }
+        .gamepack3text {
+            display: grid;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            color: $color3;
+            text-align: center;
+            .textg3 {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 10px;
+                
+            }
+            .textg3_1 {
+                background-color: $color6;
+                color: $color4;
+                padding: 20px;
+                border-radius: $sizeS;
+                margin-bottom: 10px;
+            }
+            .textg3_2 {
                 margin: 0 0 10px 10px;
             }
         }
@@ -373,6 +412,39 @@ body {
             grid-row-end: 5;
              }
             }
+            .gamepack1  {grid-column-start: 2;
+                grid-column-end: 5 !important; }
+            .gamepack1text {grid-column-start: 2;
+                grid-column-end: 5 !important; }
+            .gamepack2  { visibility: hidden; }
+            .gamepack2text { visibility: hidden ;}
+            .gamepack3  { visibility: hidden; }
+            .gamepack3text { visibility: hidden ;}
+            .new {
+                grid-column-start: 1 !important;
+            grid-column-end: 5 !important;
+            grid-row-start: 1;
+            grid-row-end: 2;;
+            }
+            .top {
+                visibility: hidden;
+            }
+            .soon {
+                visibility: hidden;
+            }
+            .banner_img {
+                grid-column-start: 1 !important;
+            grid-column-end: 5 !important;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            }
+            .banner_text {
+                grid-column-start: 1 !important;
+                grid-column-end: 5 !important;
+                grid-row-start: 2 !important;
+                grid-row-end: 5;
+            }
+  
        } }
     @media only screen and (min-width: 650px) and (max-width: 992px)  {
         body {
@@ -441,6 +513,40 @@ body {
              .hero_list {
               visibility: hidden;
              }
+             .gamepack1  {grid-column-start: 1 !important;
+                grid-column-end: 3 !important; }
+            .gamepack1text {visibility: hidden;}
+            .gamepack2  { grid-column-start: 3 !important;
+                grid-column-end: 6 !important;
+                 }
+            .gamepack2text { visibility: hidden;}
+            .gamepack3  { grid-column-start: 1 !important;
+                grid-column-end: 6 !important;
+                grid-row-start: 3 !important;
+                grid-row-end: 4;}
+            .gamepack3text { visibility: hidden;}
+            .new {
+                grid-column-start: 1 !important;
+            grid-column-end: 5 !important;
+            }
+            .top {
+                visibility: hidden;
+            }
+            .soon {
+                visibility: hidden;
+            }
+            .banner_img {
+                grid-column-start: 1 !important;
+            grid-column-end: 5 !important;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            }
+            .banner_text {
+                grid-column-start: 1 !important;
+                grid-column-end: 5 !important;
+                grid-row-start: 2 !important;
+                grid-row-end: 5;
+            }
             }
        }
 

@@ -164,6 +164,17 @@ body .header2 .nav3 {
           align-items: center;
 }
 
+body .header2 .nav3 input {
+  width: 90%;
+  padding: 10px;
+  height: 25px;
+  background: transparent;
+  background-color: #2A2A2A;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+}
+
 body .header2 .nav3 ul {
   list-style: none;
   display: -webkit-box;
@@ -386,6 +397,53 @@ body footer .footer .social {
   cursor: pointer;
   -webkit-filter: drop-shadow(0 0 5px black) brightness(215%);
           filter: drop-shadow(0 0 5px black) brightness(215%);
+}
+
+.mainButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0074E4;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(125%);
+          filter: drop-shadow(0 0 5px black) brightness(125%);
+}
+
+.secondaryButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #121212;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.secondaryButton:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(115%);
+          filter: drop-shadow(0 0 5px black) brightness(115%);
+  background-color: #2A2A2A;
 }
 
 .gray_background1 {
@@ -1123,8 +1181,8 @@ body .hero {
   height: 1000px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 60% 20% 10%;
-      grid-template-columns: 10% 60% 20% 10%;
+  -ms-grid-columns: 1fr 60% 20% 1fr;
+      grid-template-columns: 1fr 60% 20% 1fr;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   margin-top: -80px;
@@ -1314,15 +1372,15 @@ body .gamepack {
   height: 1100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 40% 40% 10%;
-      grid-template-columns: 10% 40% 40% 10%;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: 10% 25% 25% 25% 10%;
+      grid-template-columns: 10% 25% 25% 25% 10%;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
 }
 
 body .gamepack .gamepack1 {
   background: url("./img/game.tombrider.jpg") no-repeat;
-  background-size: 100% 500px;
+  background-size: 100% 400px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 2;
@@ -1376,7 +1434,7 @@ body .gamepack .gamepack1text .textg1_2 {
 
 body .gamepack .gamepack2 {
   background: url("./img/game.assasinscreed.jpg") no-repeat;
-  background-size: 100% 490px;
+  background-size: 100% 390px;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 3;
@@ -1425,6 +1483,60 @@ body .gamepack .gamepack2text .textg2_1 {
 }
 
 body .gamepack .gamepack2text .textg2_2 {
+  margin: 0 0 10px 10px;
+}
+
+body .gamepack .gamepack3 {
+  background: url("./img/game.battlefield.jpg") no-repeat;
+  background-size: 100% 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  border: 5px solid #121212;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+body .gamepack .gamepack3text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  color: gray;
+  text-align: center;
+}
+
+body .gamepack .gamepack3text .textg3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+body .gamepack .gamepack3text .textg3_1 {
+  background-color: #0074E4;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+body .gamepack .gamepack3text .textg3_2 {
   margin: 0 0 10px 10px;
 }
 
@@ -1650,6 +1762,58 @@ body .banner .banner_text .learn {
         grid-row-start: 1;
     grid-row-end: 5;
   }
+  body .gamepack1 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 5 !important;
+  }
+  body .gamepack1text {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 5 !important;
+  }
+  body .gamepack2 {
+    visibility: hidden;
+  }
+  body .gamepack2text {
+    visibility: hidden;
+  }
+  body .gamepack3 {
+    visibility: hidden;
+  }
+  body .gamepack3text {
+    visibility: hidden;
+  }
+  body .new {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  body .top {
+    visibility: hidden;
+  }
+  body .soon {
+    visibility: hidden;
+  }
+  body .banner_img {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  body .banner_text {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+    -ms-grid-row: 2 !important;
+        grid-row-start: 2 !important;
+    grid-row-end: 5;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 992px) {
@@ -1729,6 +1893,60 @@ body .banner .banner_text .learn {
   }
   body .hero_list {
     visibility: hidden;
+  }
+  body .gamepack1 {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+  }
+  body .gamepack1text {
+    visibility: hidden;
+  }
+  body .gamepack2 {
+    -ms-grid-column: 3 !important;
+        grid-column-start: 3 !important;
+    grid-column-end: 6 !important;
+  }
+  body .gamepack2text {
+    visibility: hidden;
+  }
+  body .gamepack3 {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 6 !important;
+    -ms-grid-row: 3 !important;
+        grid-row-start: 3 !important;
+    grid-row-end: 4;
+  }
+  body .gamepack3text {
+    visibility: hidden;
+  }
+  body .new {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+  }
+  body .top {
+    visibility: hidden;
+  }
+  body .soon {
+    visibility: hidden;
+  }
+  body .banner_img {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  body .banner_text {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+    -ms-grid-row: 2 !important;
+        grid-row-start: 2 !important;
+    grid-row-end: 5;
   }
 }
 /*# sourceMappingURL=home.css.map */
