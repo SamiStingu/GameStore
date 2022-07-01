@@ -62,3 +62,36 @@
     cursor: pointer;
     filter: drop-shadow(0 0 5px black) brightness(215%);
 }
+.mainButton {
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: $color6;
+    padding: 20px;
+    color: $color4;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.mainButton:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px black) brightness(125%);
+}
+.secondaryButton {
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: $color2;
+    padding: 20px;
+    color: $color4;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.secondaryButton:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px black) brightness(115%);
+    background-color: $color1;
+}

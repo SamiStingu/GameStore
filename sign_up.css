@@ -133,6 +133,53 @@ p, li, a, button {
           filter: drop-shadow(0 0 5px black) brightness(215%);
 }
 
+.mainButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0074E4;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(125%);
+          filter: drop-shadow(0 0 5px black) brightness(125%);
+}
+
+.secondaryButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #121212;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.secondaryButton:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(115%);
+          filter: drop-shadow(0 0 5px black) brightness(115%);
+  background-color: #2A2A2A;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
