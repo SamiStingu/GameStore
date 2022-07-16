@@ -1,3 +1,5 @@
+
+
 .header1_li2 {
     position: relative;
     width: 100%;
@@ -13,7 +15,16 @@
     top: 0;
     bottom: auto;
 }
-
+#error_message{
+    color: crimson;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.wrong {
+    border: 2px solid crimson;
+    border-radius: 9px;
+}
 .opacity:hover {
    opacity: 50%;
 }
@@ -94,4 +105,21 @@
     cursor: pointer;
     filter: drop-shadow(0 0 5px black) brightness(115%);
     background-color: $color1;
+}
+.removeButton {
+    border: 1px solid white;
+    border-radius: 7px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: $color5;
+    padding: 20px;
+    color: $color4;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.removeButton:hover {
+    cursor: pointer;
+    background-color: $color1;
+    filter: drop-shadow(0 0 5px black) brightness(125%);
 }

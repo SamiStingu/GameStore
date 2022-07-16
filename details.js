@@ -1,7 +1,4 @@
 window.onload = generateGames(games);
-// const urlParam = new URLSearchParams(window.location.search);
-// const idGame = urlParam.get('id');
-// console.log(idGame);
 
 import {
     games
@@ -67,8 +64,4 @@ const idGame = urlParam.get('id');
     if(game){
         createGame(game.image, game.title, game.price, game.id, game.class, game.trailer, game.rating, game.genre);
     }
-    // for (const game of gameList) {
-    //     createGame(game.image, game.title, game.price, game.id, game.class);
-    // }
-
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="nav1">
         <nav>
             <ul >
-                <a href=""><img src="img/logo4.png" width="50px" alt="logo"></a>
+                <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
                 <div class="header1_li1" ><a href="product.html" style="text-decoration: none;" ><li><p>STORE</p></li></a>
                 <div class="header1_li2"></div>
             </div>
@@ -37,8 +38,11 @@
     <div class="nav3">
     <nav>
         <ul >
-            <div><input type="search" name="search" placeholder="Search" style="color: white"></div>
-            <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>Discover</h5></li></a></div>
+            <div class="search_bar">
+                <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+            </div>
+            <div class="white_color"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
             <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
             <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
         </ul>
@@ -46,26 +50,68 @@
     <div class="nav4">
         <nav>
             <ul>
-            <div class="white_color"><a href="" style="text-decoration: none;" ><li><h5>Wishlist</h5></li></a></div>
-            <div class="white_color"><a href="" style="text-decoration: none;" ><li><h5>Cart </h5></li></a></div>
+            <div class="white_color"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
+            <div class="white_color"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart </h5></li></a></div>
             </ul>
         </nav>
     </div>
 </div>
 </div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal_header">
+            <div class="modal_title">
+                <h2>Checkout</h2>
+                <h3>👤</h3>
+            </div>
+            <span class="close">&times;</span></div>
+            <div class="modal_box">
+            <div class="modal_form"><h3>Payment methods:</h3>
+            <div class="credit_card payment"><label for="credit"><input type="radio" name="pay" id="credit_input"> Credit Card</label></div>
+            <div class="credit_container" id="credit_collapse">
+                <h4>Card Details:</h4>
+                <div class="credit_number"><input type="text" placeholder="Card Number" id="credit_number_input"></div>
+                <div class="credit_others"><div class="credit_expiration"><input type="text" placeholder="Expiration"></div>
+                <span class="credit_cvv"><input type="text" placeholder="CVV"></span></div>
+                
+                <div class="save"><input type="checkbox" name="save"> <label for="save">Do not save my credit card.</label></div>
+                
+            </div>
+            <div class="paypal payment"><label for="paypal"><input type="radio" name="pay" id="paypal_input"> PayPal</label></div>
+            <div class="paypal_container" id="paypal_collapse">
+                <div>You will be directed to PayPal to authorize your payment method, then you will be returned to complete this purchase.</div>
+            </div>
+        </div>
+            <div class="modal_pay">
+                <div class="summary">
+                    <h3>Order summary:</h3>
+                    <div id="game_price2"></div>
+                    <div id="game_discount2"></div>
+                    <div id="game_total2"></div>
+                    <div class="code"><input type="text" placeholder="Enter coupon code"></div>
+                    <p>By clicking "Place Order" below, I represent that I am over 18 and an authorized user of this payment method, and I agree to the End User Licence Agreement.</p>
+                    <div class="mainButton" id="place_order"><h4>PLACE ORDER</h4></div>
+                </div>
+            </div>
+        </div>   
+        </div> 
+            
+</div>
 <section class="cart_section">
     <div class="product_section">
-        <h1>My Cart</h1>
+        <div> <h1 id="cart_title">My Cart</h1></div>
+        <div id="cart_games">
+        </div>
     </div>
     <div class="pay_section">
         <div class="summary">
             <h3>Games and apps summary</h3>
-            <div id="game_price">price:</div>
-            <div id="game_discount">discount:</div>
+            <div id="game_price"></div>
+            <div id="game_discount"></div>
         </div>
         <div class="summary2">
-            <div id="game_total">total:</div>
-            <div id="game_buy" class="submit"><h4>CHECK OUT</h4></div>
+            <div id="game_total"></div>
+            <div id="game_buy" class="mainButton"><h4>Check out</h4></div>
         </div>
     </div>
 
@@ -108,5 +154,9 @@
             </div>
         </div>
     </footer>
+    <script src="cart.js" type="module"></script>
+    <script src="cartArray.js" ></script>
+    <script src="cartHold.js" type="module"></script>
+    <script src="all.js"></script>
 </body>
 </html>

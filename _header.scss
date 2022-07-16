@@ -59,15 +59,30 @@ body {
             grid-row-end: 1;
             height: 80px;
             align-items: center;
-            input {
-               width: 90%;
-               padding: 10px;
-               height: 25px;
-               background: transparent;
-               background-color: $color1;
-               border-radius: 1px;
-               border: none;
-               outline: none;
+            .search_bar {
+                display: flex;
+                flex-wrap: wrap;
+                input {
+                    width: 90%;
+                    padding: 10px;
+                    height: 25px;
+                    background: transparent;
+                    background-color: $color1;
+                    border-radius: 2px;
+                    border: none;
+                    outline: none;
+                 }
+                button {
+                    padding: 7px;
+                    padding-left: -100px;
+                    color: $color3;
+                    background: transparent;
+                    background-color: $color1;
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+                    border-right: 1px solid $color3;
+                }
             }
             ul{
                 list-style: none;

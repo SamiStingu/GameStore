@@ -13,19 +13,20 @@
         <div class="form">
             <h1>Sign In</h1>
             <form action="" method="get">
-                <div class="email">
+                <div class="email" id="stored-email-box">
                     <label for="email">Email Address</label>
                     <br>
-                    <input type="email" class="email" id="email" placeholder="" required >
+                    <input type="email" class="email" id="stored-email" placeholder="" required >
                     <br>
                  </div>
-                 <div class="password">
+                 <div class="password" id="stored-password-box">
                     <label for="password">Password</label>
                     <br>
-                    <input type="password" class="password" id="password" placeholder="" minlength="8" required >
+                    <input type="password" class="password" id="stored-password" placeholder="" minlength="8" required >
                     <br>
                  </div>
                  <br>
+                 <div id="error_message"></div>
                  <input type="submit" class="submit" id="submit" value="Sign In!">
                 <a href="sign_up.html" class="signup">Don't have an account?Sign up here!</a>
             </form>
@@ -37,5 +38,6 @@
             </div>
         </div>
     </div>
+    <script src="sign.js"></script>
 </body>
 </html>

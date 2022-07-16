@@ -164,15 +164,35 @@ body .header2 .nav3 {
           align-items: center;
 }
 
-body .header2 .nav3 input {
+body .header2 .nav3 .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .header2 .nav3 .search_bar input {
   width: 90%;
   padding: 10px;
   height: 25px;
   background: transparent;
   background-color: #2A2A2A;
-  border-radius: 1px;
+  border-radius: 2px;
   border: none;
   outline: none;
+}
+
+body .header2 .nav3 .search_bar button {
+  padding: 7px;
+  padding-left: -100px;
+  color: gray;
+  background: transparent;
+  background-color: #2A2A2A;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border-right: 1px solid gray;
 }
 
 body .header2 .nav3 ul {
@@ -244,10 +264,21 @@ body footer .footer {
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   background-color: #2A2A2A;
-  height: 150px;
+  height: 200px;
   color: gray;
   border-bottom: 170px solid #2A2A2A;
   margin-top: 30px;
+}
+
+body footer .footer h4 {
+  font-size: 16px;
+  color: white;
+}
+
+body footer .footer a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 body footer .footer ul {
@@ -330,6 +361,17 @@ body footer .footer .social {
   height: 7px;
   top: 0;
   bottom: auto;
+}
+
+#error_message {
+  color: crimson;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.wrong {
+  border: 2px solid crimson;
+  border-radius: 9px;
 }
 
 .opacity:hover {
@@ -444,6 +486,30 @@ body footer .footer .social {
   -webkit-filter: drop-shadow(0 0 5px black) brightness(115%);
           filter: drop-shadow(0 0 5px black) brightness(115%);
   background-color: #2A2A2A;
+}
+
+.removeButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.removeButton:hover {
+  cursor: pointer;
+  background-color: #2A2A2A;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(125%);
+          filter: drop-shadow(0 0 5px black) brightness(125%);
 }
 
 .gray_background1 {
@@ -1366,6 +1432,168 @@ body .hero .hero_list ul .game_list1_container .game_list1_background {
   width: 350px;
 }
 
+body .carrousel1 {
+  padding: 50px;
+  width: 100%;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+body .carrousel1 #container_carrousel_1, body .carrousel1 #container_carrousel_2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  display: -ms-grid;
+  display: grid;
+  height: 400px;
+}
+
+body .carrousel1 #container_carrousel_1 h3, body .carrousel1 #container_carrousel_2 h3 {
+  color: gray;
+  padding: 6px;
+}
+
+body .carrousel1 .game_carrousel_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .carrousel1 .game_carrousel_1 article {
+  width: auto;
+  height: 400px;
+  padding: 7px;
+  position: relative;
+}
+
+body .carrousel1 .game_carrousel_1 img {
+  width: auto;
+  height: 300px;
+}
+
+body .carrousel1 .game_carrousel_1 div {
+  width: auto;
+  height: 50px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+body .carrousel1 .game_carrousel_1 .cartBtn {
+  border: 1px solid white;
+  border-radius: 7px;
+  position: absolute;
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .carrousel1 .game_carrousel_1 .cartBtn:hover {
+  background-color: #121212;
+}
+
+body .carrousel1 .game_carrousel_1 .detailsBtn {
+  border: 1px solid white;
+  border-radius: 7px;
+  position: absolute;
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  visibility: hidden;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .carrousel1 .game_carrousel_1 .detailsBtn:hover {
+  background-color: #121212;
+}
+
+body .carrousel1 .game_details:hover img {
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+}
+
+body .carrousel1 .game_details:hover .cartBtn {
+  visibility: visible;
+  cursor: pointer;
+}
+
+body .carrousel1 .game_details:hover .detailsBtn {
+  visibility: visible;
+  cursor: pointer;
+}
+
+body .carrousel1 #button_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .carrousel1 #button_section select {
+  width: 53%;
+  border: none;
+  background: #121212;
+  color: white;
+}
+
+body .carrousel1 #button_section .sort_button {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .carrousel1 #button_section .game_button {
+  width: auto;
+  padding: 7px;
+  margin: 5px;
+  background-color: #0074E4;
+  color: white;
+  border-radius: 10px;
+}
+
 body .gamepack {
   padding: 50px;
   width: 100%;
@@ -1680,7 +1908,7 @@ body .new_top_soon .soon {
 body .banner {
   padding: 50px;
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 50% 30% 10%;

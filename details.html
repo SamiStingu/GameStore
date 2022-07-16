@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="details.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="nav1">
             <nav>
                 <ul>
-                    <a href=""><img src="img/logo4.png" width="50px" alt="logo"></a>
+                    <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
                     <div class="header1_li1"><a href="" style="text-decoration: none;">
                             <li>
                                 <p>STORE</p>
@@ -61,13 +62,16 @@
         <div class="nav3">
             <nav>
                 <ul>
-                    <div><input type="search" name="search" placeholder="Search" style="color: white"></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
+                    <div class="search_bar">
+                        <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+                    </div>
+                    <div class="white_color"><a href="home.html" style="text-decoration: none;">
                             <li>
-                                <h5>Discover</h5>
+                                <h5>Home</h5>
                             </li>
                         </a></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
+                    <div class="white_color"><a href="product.html" style="text-decoration: none;">
                             <li>
                                 <h5>Browse</h5>
                             </li>
@@ -82,9 +86,9 @@
             <div class="nav4">
                 <nav>
                     <ul>
-                        <div class="white_color"><a href="cart.html" style="text-decoration: none;">
+                        <div class="white_color"><a href="library.html" style="text-decoration: none;">
                                 <li>
-                                    <h5>Wishlist</h5>
+                                    <h5>Library</h5>
                                 </li>
                             </a></div>
                         <div class="white_color"><a href="cart.html" style="text-decoration: none;">
@@ -201,5 +205,6 @@
         </div>
     </footer>
     <script src="details.js" type="module"></script>
+    <script src="all.js"></script>
 </body>
 </html>

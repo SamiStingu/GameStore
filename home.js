@@ -1,10 +1,12 @@
-window.onload = generateGames(games);
+window.onload = generateGames(games.slice(0, 8));
 import {
     games
 } from "./games.js";
 
+
+// Creare articol
 function createGame(gameImg, gameTitle, gamePrice, id, gameClass) {
-    const gameContainer = document.querySelector('#game_section');
+    const gameContainer = document.querySelector('.game_carrousel_1');
 
     const gameArticle = document.createElement('article');
     const cart = document.createElement('div');
@@ -35,31 +37,37 @@ function createGame(gameImg, gameTitle, gamePrice, id, gameClass) {
 
     gameContainer.appendChild(gameArticle);
 
-    details.addEventListener('click', (event) =>{
+    details.addEventListener('click', (event) => {
         const gameID = event.target.parentElement.id;
-
-        window.open(`/details.html?id=${gameID}`, "_blank");
-
+        window.open(`/details.html?id=${gameID}`, "_self");
+    })
+    cart.addEventListener('click', (event) => {
+        gameArticle.classList.add('cartHold');
     })
 }
 
+
+// Generare lista jocuri
 function generateGames(gameList) {
-    const gameContainer = document.querySelector('#game_section');
+    const gameContainer = document.querySelector('.game_carrousel_1');
     gameContainer.innerHTML = '';
     for (const game of gameList) {
         createGame(game.image, game.title, game.price, game.id, game.class);
     }
+}
 
+// Usefull for future features
     // gameList.forEach( game => console.log(game));
     // gameList
     // .filter(game => game.price > 100)
     // .map(game => game.title)
     // .forEach(title => console.log(title));
-}
+    // games.sort(a,b => a.rating - b.rating > 0 ? true : false)
 
 
 
 
+// Filtrare prin search
 const filterGames = document.querySelector('#filter_search');
 filterGames.addEventListener('input', (event) => {
     const input = event.target.value.toLocaleLowerCase();
@@ -67,34 +75,5 @@ filterGames.addEventListener('input', (event) => {
     const filteredGames = games.filter((game) => {
         return game.title.toLocaleLowerCase().includes(input);
     })
-    // games.sort(a,b => a.rating - b.rating > 0 ? true : false)
     generateGames(filteredGames);
 })
-
-const sortGames = document.querySelector('#sorting');
-sortGames.addEventListener('input', (event) => {
-    const input = event.target.value;
-
-
-    let sortedGames;
-    switch (input) {
-        case 'asc':
-            sortedGames = games.sort((a, b) => a.title.localeCompare(b.title));
-            break;
-        case 'dsc':
-            sortedGames = games.sort((a, b) => b.title.localeCompare(a.title));
-            break;
-        case 'price_asc':
-            sortedGames = games.sort((a, b) => a.price - b.price);
-            break;
-        case 'price_dsc':
-            sortedGames = games.sort((a, b) => b.price - a.price);
-            break;
-        default:
-            sortedGames = games;
-    }
-    generateGames(sortedGames);
-
-})
-
-

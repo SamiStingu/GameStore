@@ -6,10 +6,19 @@ body {
             grid-template-columns: 10% 1fr 1fr 1fr 1fr 10% ;
             grid-template-rows: repeat(1, 1fr);
             background-color: $color1;
-            height: 150px;
+            height: 200px;
             color: gray;
             border-bottom: 170px solid $color1;
             margin-top: $sizeL;
+            h4 {
+                font-size: 16px;
+                color: $color4;
+            }
+            a {
+                color: $color4;
+                font-size: 14px;
+                text-decoration: none;
+            }
             ul {
                 display: flex;
                 flex-direction: column;

@@ -71,7 +71,11 @@ body {
             grid-column-end: 5;
             grid-row-start: 1;
             grid-row-end: 5;
-            #game_section {
+            .recent_games {
+                color: white;
+                padding: 7px;
+            }
+            #game_section, #game_section2{
                 display: flex;
                 flex-wrap: wrap;
                 article {
@@ -129,7 +133,7 @@ body {
             }
             .game_details:hover {
                img {
-                filter: blur(6px);
+                filter: blur(6px) brightness(50%);
                }
                .cartBtn {
                   visibility: visible;
@@ -163,7 +167,6 @@ body {
                 background-color: $color6;
                 color: $color4;
                 border-radius: 10px;
-
             }
         }
         }
