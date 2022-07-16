@@ -65,11 +65,12 @@ body {
     justify-content: center;
     div {
         padding: 8px;
-        font-size: 12px;
+        font-size: 14px;
         input {
             border: none ;
             border-bottom: 2px solid $color2;
             background-color: transparent;
+            outline: none;
         }
         label {
             font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -106,6 +107,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    a {
+        font-size: 13px;
+        padding-top: 5px;
     }
 }
 

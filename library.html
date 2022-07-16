@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="product.css">
 </head>
 
-<body onload="generateGames(games)">
+<body onload="generateGames2(library_games)">
     <div class="header1">
         <div class="nav1">
             <nav>
@@ -63,13 +64,16 @@
         <div class="nav3">
             <nav>
                 <ul>
-                    <!-- <div><input type="search" name="search" placeholder="Search" style="color: white"></div> -->
+                    <div class="search_bar">
+                        <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                        <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+                    </div>
                     <div class="white_color"><a href="home.html" style="text-decoration: none;">
                             <li>
                                 <h5>Home</h5>
                             </li>
                         </a></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
+                    <div class="white_color"><a href="product.html" style="text-decoration: none;">
                             <li>
                                 <h5>Browse</h5>
                             </li>
@@ -102,13 +106,9 @@
     <section class="product_container">
         <section id="filter_section">
             <div id="filter_section_header">
-                <h2>Filters</h3>
+                <h1>Library</h1>
             </div>
-            <div id="filter_section_search">
-                <div><input type="search" name="search" placeholder="Keywords" id="filter_search" style="color: white">
-                </div>
-            </div>
-            <div id="filter_section_price">
+            <!-- <div id="filter_section_price">
                 <button type="button" class="collapsible">
                     <h3>Price</h3>
                 </button>
@@ -213,10 +213,13 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="product_section">
+            <div class="recent_games"><h3>Recently added:</h3></div>
+            <section id="game_section"></section>
+            <div class="recent_games"><h3>All my games:</h3></div>
             <section id="button_section">
                 <div class="sort_button"><label for="sorting">Show:</label>
                     <select name="sort" id="sorting">
@@ -235,11 +238,12 @@
                     </button>
                 </div>
             </section>
-            <section id="game_section"></section>
+            <section id="game_section2"></section>
         </section>
     </section>
     <script src="collapsible.js"></script>
-    <script src="product.js" type="module"></script>
+    <script src="library.js" type="module"></script>
+    <!-- <script src="product.js" type="module"></script> -->
     <script src="cartArray.js"></script>
     <!-- <script src="cartHold.js"></script> -->
     <script src="all.js"></script>

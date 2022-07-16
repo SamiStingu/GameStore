@@ -164,15 +164,35 @@ body .header2 .nav3 {
           align-items: center;
 }
 
-body .header2 .nav3 input {
+body .header2 .nav3 .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .header2 .nav3 .search_bar input {
   width: 90%;
   padding: 10px;
   height: 25px;
   background: transparent;
   background-color: #2A2A2A;
-  border-radius: 1px;
+  border-radius: 2px;
   border: none;
   outline: none;
+}
+
+body .header2 .nav3 .search_bar button {
+  padding: 7px;
+  padding-left: -100px;
+  color: gray;
+  background: transparent;
+  background-color: #2A2A2A;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border-right: 1px solid gray;
 }
 
 body .header2 .nav3 ul {
@@ -244,10 +264,21 @@ body footer .footer {
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   background-color: #2A2A2A;
-  height: 150px;
+  height: 200px;
   color: gray;
   border-bottom: 170px solid #2A2A2A;
   margin-top: 30px;
+}
+
+body footer .footer h4 {
+  font-size: 16px;
+  color: white;
+}
+
+body footer .footer a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 body footer .footer ul {
@@ -330,6 +361,17 @@ body footer .footer .social {
   height: 7px;
   top: 0;
   bottom: auto;
+}
+
+#error_message {
+  color: crimson;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.wrong {
+  border: 2px solid crimson;
+  border-radius: 9px;
 }
 
 .opacity:hover {
@@ -444,6 +486,30 @@ body footer .footer .social {
   -webkit-filter: drop-shadow(0 0 5px black) brightness(115%);
           filter: drop-shadow(0 0 5px black) brightness(115%);
   background-color: #2A2A2A;
+}
+
+.removeButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.removeButton:hover {
+  cursor: pointer;
+  background-color: #2A2A2A;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(125%);
+          filter: drop-shadow(0 0 5px black) brightness(125%);
 }
 
 body {

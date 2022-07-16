@@ -66,6 +66,17 @@ p, li, a, button {
   bottom: auto;
 }
 
+#error_message {
+  color: crimson;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.wrong {
+  border: 2px solid crimson;
+  border-radius: 9px;
+}
+
 .opacity:hover {
   opacity: 50%;
 }
@@ -180,6 +191,30 @@ p, li, a, button {
   background-color: #2A2A2A;
 }
 
+.removeButton {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.removeButton:hover {
+  cursor: pointer;
+  background-color: #2A2A2A;
+  -webkit-filter: drop-shadow(0 0 5px black) brightness(125%);
+          filter: drop-shadow(0 0 5px black) brightness(125%);
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,13 +318,14 @@ body .box .form form {
 
 body .box .form form div {
   padding: 8px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body .box .form form div input {
   border: none;
   border-bottom: 2px solid #121212;
   background-color: transparent;
+  outline: none;
 }
 
 body .box .form form div label {
@@ -335,6 +371,11 @@ body .box .form .social {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body .box .form a {
+  font-size: 13px;
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 650px) {

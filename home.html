@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="nav1">
         <nav>
             <ul >
-                <a href=""><img src="img/logo4.png" width="50px" alt="logo"></a>
+                <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
                 <div class="header1_li1" ><a href="product.html" style="text-decoration: none;" ><li><p>STORE</p></li></a>
                 <div class="header1_li2"></div>
             </div>
@@ -27,8 +28,8 @@
         <nav>
             <ul>
                 <div><a href=""><li><img src="img/logo33.png" width="15px" alt="logo"></li></a></div>
-                <div class="opacity"><a href="sign_up.html" style="text-decoration: none;" ><li><p>REGISTER</p></li></a></div>
-                <div class="opacity"><a href="sign_in.html" style="text-decoration: none;" ><li><p>LOG IN</p></li></a></div>
+                <div class="opacity" id="register_blue"><a href="sign_up.html" style="text-decoration: none;" ><li><p id="register_name"></p></li></a></div>
+                <div class="opacity"><a href="sign_in.html" style="text-decoration: none;" ><li><p id="login_logout"></p></li></a></div>
             </ul>
         </nav>
     </div>
@@ -37,8 +38,11 @@
     <div class="nav3">
     <nav>
         <ul >
-            <div><input type="search" name="search" placeholder="Search" style="color: white"></div>
-            <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>Discover</h5></li></a></div>
+            <div class="search_bar">
+                <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+            </div>
+            <div class="white_color"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
             <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
             <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
         </ul>
@@ -46,7 +50,7 @@
     <div class="nav4">
         <nav>
             <ul>
-            <div class="white_color"><a href="cart.html" style="text-decoration: none;" ><li><h5>Wishlist</h5></li></a></div>
+            <div class="white_color"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
             <div class="white_color"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart </h5></li></a></div>
             </ul>
         </nav>
@@ -156,10 +160,26 @@
             </ul>
         </div>
     </div>
+    
+    <div class="carrousel1"><section id="container_carrousel_1">
+        <section id="button_section">
+            <h3>Best games :</h3>
+            <div>
+                <button type="button" class="game_button" id="prevBtn">
+                    <h4>Previous</h4>
+                </button>
+                <button type="button" class="game_button" id="nextBtn">
+                    <h4>Next</h4>
+                </button>
+            </div>
+        </section>
+        <section class="game_carrousel_1"></section>
+    </section></div>
+
     <div class="gamepack">
         <div class="gamepack1 game_image"></div>
         <div class="gamepack1text">
-            <h2>Tomb Raider: Definitive Survivor Trilogy</h2>
+            <h2>Tomb Raider: Definitive Survivor Trilog</h2>
             <!-- <h5>Follow Lara on her formative journey across the world, starting in Tomb Raider trapped on the shrouded island of Yamatai off the coast of Japan, to the harsh Siberian tundra hiding an immortal secret in Rise of the Tomb Raider, and finally to the mountainous landscape of Peru to uncover a cataclysmic power in Shadow of the Tomb Raider.</h5> -->
             <div class="textg1">
                 <div class="textg1_1"><h4>-80%</h4></div>
@@ -180,13 +200,15 @@
         <div class="gamepack3 game_image"></div>
         <div class="gamepack3text">
             <h2>Battlefield™ Anniversary Bundle</h2>
-            <!-- <h5>Squad up and bring a cutting-edge arsenal into massive-scale battlegrounds, set in a near-future world transformed by disorder.</h5> -->
             <div class="textg3">
                 <div class="textg3_1"><h4>-60%</h4></div>
                 <div class="textg3_2"><h3><s>400 RON</s></h3> <h2>160 RON</h2></div>
             </div>
         </div>
     </div>
+
+
+
     <div class="new_top_soon">
         <div class="new">
             <ul>
@@ -287,5 +309,8 @@
             </div>
         </div>
     </footer>
+    <script src="home.js" type="module"></script>
+    <script src="sign.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>
