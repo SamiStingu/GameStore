@@ -2,31 +2,31 @@
     width: 100%;
     background-color: $color1;
     animation-name: gray_background1;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .gray_background2 {
     background-color: $color1;
     animation-name: gray_background2;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .gray_background3 {
     background-color: $color1;
     animation-name: gray_background3;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .gray_background4 {
     background-color: $color1;
     animation-name: gray_background4;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .gray_background5 {
     background-color: $color1;
     animation-name: gray_background5;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 
@@ -35,11 +35,11 @@
         width: 0%;
         padding: 0;
     }
-    20% {
+    15% {
         width: 100%;
         padding: 0;
     }
-    21% {
+    23% {
         width: 0%;
         padding: 0;
     }
@@ -58,11 +58,11 @@
         width: 0%;
         padding: 0;
     }
-    40% {
+    35% {
         width: 100%;
         padding: 0;
     }
-    41% {
+    43% {
         width: 0%;
         padding: 0;
     }
@@ -81,11 +81,11 @@
         width: 0%;
         padding: 0;
     }
-    60% {
+    55% {
         width: 100%;
         padding: 0;
     }
-    61% {
+    63% {
         width: 0%;
         padding: 0;
     }
@@ -104,11 +104,11 @@
         width: 0%;
         padding: 0;
     }
-    80% {
+    75% {
         width: 100%;
         padding: 0;
     }
-    81% {
+    83% {
         width: 0%;
         padding: 0;
     }
@@ -127,7 +127,7 @@
         width: 0%;
         padding: 0;
     }
-    99% {
+    95% {
         width: 100%;
         padding: 0;
     }
@@ -139,7 +139,7 @@
 }
 .hero_image2 {
     background: url("./img/game.tina3.jpg") no-repeat;
-    background-size: 100% 730px;
+    background-size: cover;
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -150,7 +150,7 @@
     // visibility: hidden;
     position: relative;
     animation-name: hero_games2;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .hero_text2 {
@@ -188,8 +188,8 @@
     }
 }
 .hero_image3 {
-    background: url("./img/game.subnautica1.jpg") no-repeat;
-    background-size: 100% 715px;
+    background: url("./img/game.valorant1.jpg") no-repeat;
+    background-size: cover;
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -200,7 +200,7 @@
     // visibility: hidden;
     position: relative;
     animation-name: hero_games3;
-     animation-duration: 50s;
+     animation-duration: 25s;
      animation-iteration-count: infinite;
 }
 .hero_text3 {
@@ -212,16 +212,16 @@
     color: $color4;
     .text1{
         width: 75%;
-        height: 40%;
+        height: 50%;
         text-align: center;
     }
     .text2{
         width: 85%;
-        height: 20%;
+        height: 10%;
     }
     .text3{
         width: 60%;
-        height: 30%;
+        height: 20%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -239,8 +239,8 @@
     }
 }
 .hero_image4 {
-    background: url("./img/game.naraka3.jpg") no-repeat;
-    background-size: 100% 715px;
+    background: url("./img/game.naraka3.jpg")  center no-repeat;
+    background-size: cover;
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -251,7 +251,7 @@
     // visibility: hidden;
     position: relative;
     animation-name: hero_games4;
-     animation-duration: 50s;
+     animation-duration: 25s;
      animation-iteration-count: infinite;
 }
 .hero_text4 {
@@ -289,8 +289,8 @@
     }
 }
 .hero_image5 {
-    background: url("./img/game.vampire3.jpg") no-repeat;
-    background-size: 100% 715px;
+    background: url("./img/game.vampire3.jpg") right no-repeat;
+    background-size: cover;
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -301,7 +301,7 @@
     // visibility: hidden;
     position: relative;
     animation-name: hero_games5;
-    animation-duration: 50s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 .hero_text5 {
@@ -340,16 +340,16 @@
 }
 @keyframes hero_games {
     0% {
-      z-index: 8;
+      z-index: 7;
     }
     20% {
-        z-index: 8;
-    }
-    21% {
         z-index: 7;
     }
+    21% {
+        z-index: 6;
+    }
     100% {
-        z-index: 4;
+        z-index: 3;
     }
   
 }
@@ -357,13 +357,13 @@
     0% {
     }
     21% {
-      z-index: 7;
+      z-index: 6;
     }
     40% {
-        z-index: 7;
+        z-index: 6;
     }
     41% {
-        z-index: 6;
+        z-index: 5;
     }
     100% {
         
@@ -374,13 +374,13 @@
     0% {
     }
     41% {
-      z-index: 6;
+      z-index: 5;
     }
     60% {
-        z-index: 6;
+        z-index: 5;
     }
     61% {
-        z-index: 5;
+        z-index: 4;
     }
     100% {
       }
@@ -392,14 +392,14 @@
     }
     61% {
       
-      z-index: 5;
+      z-index: 4;
     }
     80% {
       
-      z-index: 5;
+      z-index: 4;
     }
     81% {
-        z-index: 4;
+        z-index: 3;
       
     }
     100% {
@@ -412,13 +412,48 @@
       
     }
     81% {
-      z-index: 4;
+      z-index: 3;
     }
     99% {
-        z-index: 4;
-    }
-    100% {
         z-index: 3;
     }
+    100% {
+        z-index: 2;
+    }
   
+}
+@media screen and (min-width: 1700px) {
+    .hero_image {
+        background: url("./img/game.starwars1.jpg") no-repeat !important;
+        background-size: 100% 1100px !important;
+    }}
+@media screen and (min-width: 2000px) {
+    .hero_image {
+        background: url("./img/game.starwars5.jpg") no-repeat !important;
+        background-size: 100% 720px !important;
+    .text1 {
+        visibility: hidden;
+    }
+    .text2 {
+        height: 0% !important;
+        width: 69% !important;
+    }
+    .text3 {
+        height: 30% !important;
+        width: 50% !important;
+    }
+    }
+    .hero_image2 {
+        background-size: 100% 726px !important;
+    }
+    .hero_image3 {
+        background-size: 100% 720px !important;
+    }
+    .hero_image4 {
+        background-size: 100% 720px !important;
+    }
+    .hero_image5 {
+        background-size: 100% 720px !important;
+    }
+    
 }

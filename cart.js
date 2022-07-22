@@ -16,6 +16,7 @@ function generateGames(gameList) {
 // Creare articol in cart
 function createGame(gameImg, gameTitle, gamePrice, gameClass, gameId) {
 const gameContainer = document.querySelector('#cart_games');
+const removeAll = document.querySelector('#remove_title')
 const gameArticle = document.createElement('article');
 const cart_image_container = document.createElement('div');
 const cart_details_container = document.createElement('div');
@@ -32,6 +33,7 @@ if (gamePrice == 0) {
 }
 img.setAttribute('src', gameImg);
 gameArticle.setAttribute('class', gameClass);
+cart_details_container.setAttribute('id', gameId);
 remove.setAttribute('class', 'removeButton');
 remove.innerHTML = 'Remove game';
 
@@ -45,9 +47,19 @@ cart_details_container.appendChild(remove);
 
 // Remove from cart
 remove.addEventListener('click', (event) => {
+    const thisGameId = event.target.parentElement.id;
+    let filtered = holdArray.filter(function(game) {return game.id != thisGameId})
     window.localStorage.removeItem('cart');
-    // location.reload();
+    window.localStorage.setItem('cart', JSON.stringify(filtered));
+    location.reload();
 })
+
+
+removeAll.addEventListener('click', (event) => {
+    window.localStorage.removeItem('cart');
+    location.reload();
+})
+
 }
 
 // Calculare total cart
@@ -81,6 +93,37 @@ modal_btn.addEventListener('click', (event) => {
     close.onclick = function() {
         modal.style.display = "none";
     }
+    let email = document.getElementById('modal_email');
+    let email_hold = localStorage.getItem('email');
+    let logare = localStorage.getItem('logged');
+    if(logare) {
+        email.innerHTML = '👤: ' + email_hold;
+    }else {
+        email.innerHTML = 'You are not logged in!'
+    }
+
+    //Deschidere/Inchidere metode de plata
+    document.getElementById("credit_input").addEventListener('click', function (event) {
+        if (event.target && event.target.matches("input[type='radio']")) {
+            let credit_bigger_content = document.querySelector('.credit_bigger_container');
+            credit_bigger_content.style.display =  "block";
+            let paypal_bigger_content = document.querySelector('.paypal_bigger_container');
+            paypal_bigger_content.style.display =  "none";
+        }
+    });
+
+    document.getElementById("paypal_input").addEventListener('click', function (event) {
+        if (event.target && event.target.matches("input[type='radio']")) {
+            let paypal_bigger_content = document.querySelector('.paypal_bigger_container');
+            paypal_bigger_content.style.display =  "block";
+            let credit_bigger_content = document.querySelector('.credit_bigger_container');
+            credit_bigger_content.style.display =  "none";
+            
+        }
+    });
+
+
+
     function sum(gameList) {
         let allPrice = holdArray.map(function(element){return element.price});
         let sum = 0;
@@ -106,9 +149,29 @@ modal_btn.addEventListener('click', (event) => {
     sum();
 });
 
+// Thanks for buying...go to library
+const modal_credit1 = document.getElementsByClassName('modal_box');
+const modal_credit0 = document.getElementsByClassName('modal_box0');
 const place_order_btn = document.getElementById('place_order');
-place_order_btn.addEventListener('click', (event) => {
+const place_order_btn_inner = document.getElementById('final_buyBTN');
+place_order_btn.innerHTML = 'PLACE ORDER'
+let logare = localStorage.getItem('logged');
+if(logare) {
+    place_order_btn.addEventListener('click', (event) => {
     window.localStorage.setItem('library', JSON.stringify(holdArray));
-    console.log(holdArray);
+    window.localStorage.removeItem('cart');
+    place_order_btn_inner.innerHTML = 'GO TO LIBRARY'
+    modal_credit1[0].style.display = "none";
+    modal_credit0[0].style.display = "block";
+    place_order_btn_inner.addEventListener('click', (event) => {
+        window.open(`/library.html`, "_self");
+    })
 })
+}else {
+    place_order_btn.innerHTML = 'Log in!'
+    place_order_btn.addEventListener('click', (event) => {
+        window.open(`/sign_in.html`, "_self");
+    })
+}
+
 

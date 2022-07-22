@@ -58,13 +58,14 @@ function check() {
     let storedEmail = localStorage.getItem('email');
     let storedPw = localStorage.getItem('pw');
     let storedName = localStorage.getItem('name');
+    localStorage.setItem('logged', 'yes');
     let error = document.getElementById('error_message');
 
     let signinEmail = document.getElementById('stored-email');
     let signinPw = document.getElementById('stored-password');
 
     if(signinEmail.value == storedEmail && signinPw.value == storedPw){
-        window.open(`/home.html?name=${storedName}`, "_blank");
+        window.open(`/home.html`, "_blank");
     }else{
         error.innerHTML = 'Incorrect email or password !';
     }

@@ -1,3 +1,45 @@
+window.onload = greet2();
+window.onload = addToCart();
+
+// Add to cart
+function addToCart() {
+    const cart_item = document.getElementById('cart_number');
+    let holdArray = JSON.parse(window.localStorage.getItem('cart'));
+    if(holdArray) {
+        if(holdArray.length > 0) {
+        cart_item.setAttribute('class', 'cartHoldItem');
+        cart_item.innerHTML = holdArray.length;
+    }
+    }
+}
+
+// New greet
+function greet2() {
+    let greet_name = localStorage.getItem('name');
+    let greet_logare = localStorage.getItem('logged');
+    let register_box = document.getElementById('register_name');
+    let login_box = document.getElementById('login_logout');
+    if (greet_logare) {
+        register_box.innerHTML = 'Hello ' + greet_name;
+        const blue = document.getElementById('register_blue')
+        blue.style.backgroundColor = '#0074E4';
+        login_box.innerHTML = 'Log Out';
+
+        login_box.addEventListener('click', (event) => {
+            localStorage.removeItem('logged');
+            window.open(`/home.html`, "_blank");
+        })
+    } else {
+        register_box.innerHTML = 'Register';
+        login_box.innerHTML = 'Log In';
+
+        login_box.addEventListener('click', (event) => {
+            window.open(`/sign_in.html`, "_blank");
+        })
+    }
+}
+
+
 
 
 // Search
@@ -9,24 +51,10 @@ searchBtn.addEventListener('click', (event) => {
     window.open(`/product.html?searched=${gameSearched}`, "_self")
 })
 
-window.onload = greet();
-//Greet
-function greet() {
-    const urlParam = new URLSearchParams(window.location.search);
-    const userName = urlParam.get('name');
-    let register_box = document.getElementById('register_name');
-    let login_box = document.getElementById('login_logout');
-
-    register_box.innerHTML = 'Register';
-    login_box.innerHTML = 'Log In';
-    
-    if(userName.typeof = 'string'){
-    register_box.innerHTML = 'Hello ' + userName;
-    const blue = document.getElementById('register_blue')
-    blue.style.backgroundColor = '#0074E4';
-    login_box.innerHTML = 'Log Out';
-    }
-    login_box.addEventListener('click', (event) => {
-        window.open(`/home.html`, "_blank");
-    })
-}
+// // Cart items 
+// function addToCart() {
+//     const cart_item = document.getElementById('cart_number');
+//     cart_item.setAttribute('class', 'cartHoldItem');
+//     let holdArray = JSON.parse(window.localStorage.getItem('cart'));
+//     cart_item.innerHTML = holdArray.length;
+// }

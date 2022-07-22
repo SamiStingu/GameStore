@@ -11,96 +11,111 @@
 <body>
     <div class="header1">
         <div class="nav1">
-            <nav>
-                <ul>
-                    <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>STORE</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>FAQ</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>HELP</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav2">
-            <nav>
-                <ul>
-                    <div><a href="">
-                            <li><img src="img/logo33.png" width="15px" alt="logo"></li>
-                        </a></div>
-                    <div class="opacity"><a href="sign_up.html" style="text-decoration: none;">
-                            <li>
-                                <p>REGISTER</p>
-                            </li>
-                        </a></div>
-                    <div class="opacity"><a href="sign_in.html" style="text-decoration: none;">
-                            <li>
-                                <p>LOG IN</p>
-                            </li>
-                        </a></div>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="header2">
-        <div class="nav3">
-            <nav>
-                <ul>
-                    <div class="search_bar">
-                        <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
-                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
-                    </div>
-                    <div class="white_color"><a href="home.html" style="text-decoration: none;">
-                            <li>
-                                <h5>Home</h5>
-                            </li>
-                        </a></div>
-                    <div class="white_color"><a href="product.html" style="text-decoration: none;">
-                            <li>
-                                <h5>Browse</h5>
-                            </li>
-                        </a></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
-                            <li>
-                                <h5>News</h5>
-                            </li>
-                        </a></div>
-                </ul>
-            </nav>
-            <div class="nav4">
-                <nav>
-                    <ul>
-                        <div class="white_color"><a href="library.html" style="text-decoration: none;">
-                                <li>
-                                    <h5>Library</h5>
-                                </li>
-                            </a></div>
-                        <div class="white_color"><a href="cart.html" style="text-decoration: none;">
-                                <li>
-                                    <h5>Cart </h5>
-                                </li>
-                            </a></div>
-                    </ul>
-                </nav>
+        <nav>
+            <ul >
+                <a href="home.html" class="logo"><img src="img/logo4.png" width="50px" alt="logo"></a>
+                <div class="header1_li1" ><a href="product.html" style="text-decoration: none;" ><li><p>STORE</p></li></a>
+                <div class="header1_li2"></div>
             </div>
-        </div>
+                <div class="header1_li1"><a href="" style="text-decoration: none;" ><li><p>FAQ</p></li></a>
+                    <div class="header1_li2"></div></div>
+                <div class="header1_li1"><a href="" style="text-decoration: none;" ><li><p>HELP</p></li></a>
+                    <div class="header1_li2"></div></div>
+                   <div class="dropdown">
+                    <button class="dropbtn"><h3>≡ Menu</h3></button>
+                    <div class="dropdown_content">
+                        <a clas href="home.html"> <h4>Home</h4></a>
+                        <a href="product.html"> <h4>Browse</h4></a>
+                        <a href="library.html"> <h4>Library</h4></a>
+                        <a href="news.html"> <h4>News</h4></a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
     </div>
+        <div class="nav2">
+        <nav>
+            <ul>
+                <div><a href=""><li><img src="img/logo33.png" width="15px" alt="logo"></li></a></div>
+                <div class="opacity" id="register_blue"><a href="" style="text-decoration: none;" ><li><p id="register_name"></p></li></a></div>
+                <div class="opacity"><a href="" style="text-decoration: none;" ><li><p id="login_logout"></p></li></a></div>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="header2">
+    <div class="nav3">
+    <nav>
+        <ul >
+            <div class="search_bar">
+                <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+            </div>
+            <div class="white_color" id="home"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
+            <div class="white_color" id="browse"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
+            <div class="white_color" id="news"><a href="news.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
+        </ul>
+    </nav>
+    <div class="nav4">
+        <nav>
+            <ul>
+            <div class="white_color" id="library"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
+            <div class="white_color" id="cart"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart <span id="cart_number"></span></h5></li></a></div>
+            </ul>
+        </nav>
+    </div>
+</div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal_header">
+            <div class="modal_title">
+                <h2>Checkout</h2>
+                <h4 id="modal_email"></h4>
+            </div>
+            <span class="close">&times;</span></div>
+            <div class="modal_box0">
+                <h1>Thanks for buying from our gamestore!</h1>
+                <h3>Go to your library to check your new games.</h4>
+                <div class="mainButton" id="final_buyBTN"><h4></h4></div>
+            </div>
+            <div class="modal_box">
+            <div class="modal_form"><h3>Payment methods:</h3>
+            <div class="credit_card payment"><label for="credit"><input type="radio" name="pay" id="credit_input"> Credit Card</label></div>
+            <div class="credit_bigger_container">
+                <div class="credit_container" id="credit_collapse">
+                <h4>Card Details:</h4>
+                <div class="credit_number"><input type="text" placeholder="Card Number" id="credit_number_input"></div>
+                <div class="credit_others"><div class="credit_expiration"><input type="text" placeholder="Expiration"></div>
+                <span class="credit_cvv"><input type="text" placeholder="CVV"></span></div>
+                
+                <div class="save"><input type="checkbox" name="save"> <label for="save">Do not save my credit card.</label></div>
+                
+            </div>
+            </div>
+            <div class="paypal payment"><label for="paypal"><input type="radio" name="pay" id="paypal_input"> PayPal</label></div>
+            <div class="paypal_bigger_container">
+            <div class="paypal_container" id="paypal_collapse">
+                <div>Pay with your saved card or you will be directed to PayPal to authorize your payment method, then you will be returned to complete this purchase.</div>
+            </div>
+            </div>
+            
+        </div>
+            <div class="modal_pay">
+                <div class="summary">
+                    <h3>Order summary:</h3>
+                    <div id="game_price2"></div>
+                    <div id="game_discount2"></div>
+                    <div id="game_total2"></div>
+                    <div class="code"><input type="text" placeholder="Enter coupon code"></div>
+                    <p>By clicking "Place Order" below, I represent that I am over 18 and an authorized user of this payment method, and I agree to the End User Licence Agreement.</p>
+                    <div class="mainButton" id="place_order"><h4></h4></div>
+                </div>
+            </div>
+        </div>   
+        </div> 
+            
+</div>
     <section id="details" class="details">
         <section class="trailer_section"></section>
         <section class="product_section"></section>
@@ -156,14 +171,16 @@
             identifier based on a minimum age is used by nearly all systems, along with additional descriptors to identify specific content that players and parents should be aware of.
         </div>
         <div class="platform">
-            <h2>Platform</h2>
-            ideo games require a platform, a specific combination of electronic components or computer hardware and associated software,
+            <h2 class="p">Platform</h2>
+            <p>Video games require a platform, a specific combination of electronic components or computer hardware and associated software,
              to operate.[32] The term system is also commonly used. Games are typically designed to be played on one or a limited number of 
              platforms, and exclusivity to a platform is used as a competitive edge in the video game market.[33] However, games may be developed for
               alternative platforms than intended, which are described as ports or conversions. These also may be remasters - where most of the original game's 
               source code is reused and art assets, models, and game levels are updated for 
-            modern systems - and remakes, where in addition to asset improvements, significant reworking of the original game and possibly from scratch is performed.[34]
-            <a href="/product.html"><br><br><br><h2>Return to the list</h2></a>
+            modern systems - and remakes, where in addition to asset improvements, significant reworking of the original game and possibly from scratch is performed.[34]</p>
+            
+            
+            <div class="secondaryButton back"><a href="/product.html"><h2>Return to the product list</h2></a></div>
         </div>
     </section>
     <footer>
@@ -197,14 +214,16 @@
             <div class="social">
                 <ul>
                     <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="facebook"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="instagram"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="twitter"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="youtube"></a></li>
+                    <li><a href=""><img src="./img/logo.insta.png" width="30px" alt="instagram"></a></li>
+                    <li><a href=""><img src="./img/logo.twitter.png" width="30px" alt="twitter"></a></li>
+                    <li><a href=""><img src="./img/logo.youtube.png" width="30px" alt="youtube"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="details.js" type="module"></script>
     <script src="all.js"></script>
+    <script src="cartArray.js" ></script>
+    <script src="cartHold.js" type="module"></script>
 </body>
 </html>

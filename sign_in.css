@@ -215,6 +215,10 @@ p, li, a, button {
           filter: drop-shadow(0 0 5px black) brightness(125%);
 }
 
+#nextBtn:hover, #prevBtn:hover {
+  cursor: pointer;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
