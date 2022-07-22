@@ -13,7 +13,7 @@
         <div class="nav1">
         <nav>
             <ul >
-                <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
+                <a href="home.html" class="logo"><img src="img/logo4.png" width="50px" alt="logo"></a>
                 <div class="header1_li1" ><a href="product.html" style="text-decoration: none;" ><li><p>STORE</p></li></a>
                 <div class="header1_li2"></div>
             </div>
@@ -21,6 +21,15 @@
                     <div class="header1_li2"></div></div>
                 <div class="header1_li1"><a href="" style="text-decoration: none;" ><li><p>HELP</p></li></a>
                     <div class="header1_li2"></div></div>
+                   <div class="dropdown">
+                    <button class="dropbtn"><h3>≡ Menu</h3></button>
+                    <div class="dropdown_content">
+                        <a clas href="home.html"> <h4>Home</h4></a>
+                        <a href="product.html"> <h4>Browse</h4></a>
+                        <a href="library.html"> <h4>Library</h4></a>
+                        <a href="news.html"> <h4>News</h4></a>
+                    </div>
+                </div> 
             </ul>
         </nav>
     </div>
@@ -28,8 +37,8 @@
         <nav>
             <ul>
                 <div><a href=""><li><img src="img/logo33.png" width="15px" alt="logo"></li></a></div>
-                <div class="opacity" id="register_blue"><a href="sign_up.html" style="text-decoration: none;" ><li><p id="register_name"></p></li></a></div>
-                <div class="opacity"><a href="sign_in.html" style="text-decoration: none;" ><li><p id="login_logout"></p></li></a></div>
+                <div class="opacity" id="register_blue"><a href="" style="text-decoration: none;" ><li><p id="register_name"></p></li></a></div>
+                <div class="opacity"><a href="" style="text-decoration: none;" ><li><p id="login_logout"></p></li></a></div>
             </ul>
         </nav>
     </div>
@@ -42,16 +51,16 @@
                 <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
                 <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
             </div>
-            <div class="white_color"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
-            <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
-            <div class="white_color"><a href="product.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
+            <div class="white_color" id="home"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
+            <div class="white_color" id="browse"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
+            <div class="white_color" id="news"><a href="news.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
         </ul>
     </nav>
     <div class="nav4">
         <nav>
             <ul>
-            <div class="white_color"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
-            <div class="white_color"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart </h5></li></a></div>
+            <div class="white_color" id="library"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
+            <div class="white_color" id="cart"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart <span id="cart_number"></span></h5></li></a></div>
             </ul>
         </nav>
     </div>
@@ -66,8 +75,8 @@
                     a galaxy far, far away has never been more fun!
                 </h3></div>
                 <div class="text3">
-                    <div class="text3_1"><h4>GET IT NOW</h4></div>
-                    <div class="text3_2"><p>+ Add to Wishlist</p></div>
+                    <div class="text3_1" id="herogame1_buy"><h4>GET IT NOW</h4></div>
+                    <div class="text3_2"><p id="herogame1_cart">+ Add to Cart</p></div>
                 </div>
             </div>
         </div>
@@ -78,21 +87,20 @@
                     Roll your own multiclass hero then shoot, loot, slash, and cast on a quest to stop the Dragon Lord.
                 </h3></div>
                 <div class="text3">
-                    <div class="text3_1"><h4>GET IT NOW</h4></div>
-                    <div class="text3_2"><p>+ Add to Wishlist</p></div>
+                    <div class="text3_1" id="herogame2_buy"><h4>GET IT NOW</h4></div>
+                    <div class="text3_2"><p id="herogame2_cart">+ Add to Cart</p></div>
                 </div>
             </div>
         </div>
         <div class="hero_image3">
             <div class="hero_text3">
-                <div class="text1"><h1>Subnautica:</h2><h3>Below Zero</h3></div>
-                <div class="text2"><h4>Dive into a freezing underwater adventure on an alien planet. <br>
-                    Return to Planet 4546B to uncover the truth behind a deadly cover-up.
-                     Survive by building habitats, crafting tools, & diving deeper into the world of Subnautica.
+                <div class="text1"><h1>Valorant</h2></div>
+                <div class="text2"><h4>Blend your style and experience on a global, competitive stage. Attack and defend your side 
+                    using sharp gunplay and tactical abilities. And, with one life per-round, you'll have to think faster than your opponent if you want to survive.
                 </h3></div>
                 <div class="text3">
-                    <div class="text3_1"><h4>GET IT NOW</h4></div>
-                    <div class="text3_2"><p>+ Add to Wishlist</p></div>
+                    <div class="text3_1" id="herogame3_buy"><h4>GET IT NOW</h4></div>
+                    <div class="text3_2"><p id="herogame3_cart">+ Add to Cart</p></div>
                 </div>
             </div>
         </div>
@@ -103,8 +111,8 @@
                     vast arsenals of melee & ranged weapons, legendary customizable heroes with epic abilities.
                 </h4></div>
                 <div class="text3">
-                    <div class="text3_1"><h4>GET IT NOW</h4></div>
-                    <div class="text3_2"><p>+ Add to Wishlist</p></div>
+                    <div class="text3_1" id="herogame4_buy"><h4>GET IT NOW</h4></div>
+                    <div class="text3_2"><p id="herogame4_cart">+ Add to Cart</p></div>
                 </div>
             </div>
         </div>
@@ -115,43 +123,43 @@
                     <br> And what if you became one of them?
                 </h3></div>
                 <div class="text3">
-                    <div class="text3_1"><h4>GET IT NOW</h4></div>
-                    <div class="text3_2"><p>+ Add to Wishlist</p></div>
+                    <div class="text3_1" id="herogame5_buy"><h4>GET IT NOW</h4></div>
+                    <div class="text3_2"><p id="herogame5_cart">+ Add to Cart</p></div>
                 </div>
             </div>
         </div>
         <div class="hero_list">
             <ul>
             <li>
-            <div class="game_list1 white_color game_list1_container gray_background1">
+            <div class="game_list1 white_color game_list1_container gray_background1" id="herogame1_buy2">
                 <div class="game_list1_image"><img src="/img/game.starwars2.jpg" width="80px" height="110px" alt=""></div>
                 <div class="game_list1_text"><h3>LEGO Star Wars™: The Skywalker Saga</h3></div>
                 <div class="game_list1_background"></div>
             </div>
             </li>
             <li>
-            <div class="game_list1 white_color game_list1_container gray_background2">
+            <div class="game_list1 white_color game_list1_container gray_background2" id="herogame2_buy2">
                 <div class="game_list1_image"><img src="/img/game.tina2.jpg" width="80px" height="110px" alt=""></div>
                 <div class="game_list1_text"><h3>Tiny Tina's Wonderlands</h3></div>
                 <div class="game_list1_background"></div>
             </div>
             </li>
             <li>
-            <div class="game_list1 white_color game_list1_container gray_background3">
-                <div class="game_list1_image"><img src="/img/game.subnautica2.jpg" width="80px" height="110px" alt=""></div>
-                <div class="game_list1_text"><h3>Subnautica : Below Zero</h3></div>
+            <div class="game_list1 white_color game_list1_container gray_background3" id="herogame3_buy2">
+                <div class="game_list1_image"><img src="/img/game.valorant2.jpg" width="80px" height="110px" alt=""></div>
+                <div class="game_list1_text"><h3>Valorant</h3></div>
                 <div class="game_list1_background"></div>
             </div>
             </li>
             <li>
-            <div class="game_list1 white_color game_list1_container gray_background4">
+            <div class="game_list1 white_color game_list1_container gray_background4" id="herogame4_buy2">
                 <div class="game_list1_image"><img src="/img/game.naraka2.jpg" width="80px" height="110px" alt=""></div>
                 <div class="game_list1_text"><h3>Naraka : BladePoint</h3></div>
                 <div class="game_list1_background"></div>
             </div>
             </li>
             <li>
-            <div class="game_list1 white_color game_list1_container gray_background5">
+            <div class="game_list1 white_color game_list1_container gray_background5" id="herogame5_buy2">
                 <div class="game_list1_image"><img src="/img/game.vampire2.jpg" width="80px" height="110px" alt=""></div>
                 <div class="game_list1_text"><h3>Vampire : The Masquerade-Swansong</h3></div>
                 <div class="game_list1_background"></div>
@@ -163,7 +171,7 @@
     
     <div class="carrousel1"><section id="container_carrousel_1">
         <section id="button_section">
-            <h3>Best games :</h3>
+            <h3>Most popular :</h3>
             <div>
                 <button type="button" class="game_button" id="prevBtn">
                     <h4>Previous</h4>
@@ -176,101 +184,95 @@
         <section class="game_carrousel_1"></section>
     </section></div>
 
-    <div class="gamepack">
-        <div class="gamepack1 game_image"></div>
-        <div class="gamepack1text">
-            <h2>Tomb Raider: Definitive Survivor Trilog</h2>
-            <!-- <h5>Follow Lara on her formative journey across the world, starting in Tomb Raider trapped on the shrouded island of Yamatai off the coast of Japan, to the harsh Siberian tundra hiding an immortal secret in Rise of the Tomb Raider, and finally to the mountainous landscape of Peru to uncover a cataclysmic power in Shadow of the Tomb Raider.</h5> -->
-            <div class="textg1">
-                <div class="textg1_1"><h4>-80%</h4></div>
-                <div class="textg1_2"><h3><s>800 RON</s></h3> <h2>100 RON</h2></div>
-            </div>
-        </div>
-        <div class="gamepack2 game_image"></div>
-        <div class="gamepack2text">
-            <h2>Assassin's Creed Bundle: Origins, Odyssey, Valhalla</h2>
-            <!-- <h5>Relive the origin story of the Brotherhood and discover the secrets of ancient Egypt. <br>
-            Forge your destiny as a legendary Spartan warrior in ancient Greece. <br>
-            Become a fierce Viking raider on a quest for glory in England's Dark Ages.</h5> -->
-            <div class="textg2">
-                <div class="textg2_1"><h4>-75%</h4></div>
-                <div class="textg2_2"><h3><s>700 RON</s></h3> <h2>175 RON</h2></div>
-            </div>
-        </div>
-        <div class="gamepack3 game_image"></div>
-        <div class="gamepack3text">
-            <h2>Battlefield™ Anniversary Bundle</h2>
-            <div class="textg3">
-                <div class="textg3_1"><h4>-60%</h4></div>
-                <div class="textg3_2"><h3><s>400 RON</s></h3> <h2>160 RON</h2></div>
-            </div>
-        </div>
+    <div class="comingsoon">
+        <div class="coming_title"><h3>Most anticipated:</h3></div>
+        <div class="comingsoon1 game_image"></div><div class="coming_text1"><div><h2>Ravenlok</h2></div><div><h5>Ravenlok, a fairytale reimagining of a kingdom troubled by an evil queen and a young girl’s destiny to fulfill a dangerous prophecy.</h5></div></div>
+        <div class="comingsoon2 game_image"></div><div class="coming_text2"><div><h2>Skull and Bones</h2></div><div><h5>Enter the perilous paradise of Skull and Bones™ as you overcome the odds and rise from an outcast to infamous pirate.</h5></div></div>
+        <div class="comingsoon3 game_image"></div><div class="coming_text3"><div><h2>Gotham Knights</h2></div><div><h5>A new expansive, criminal underworld has swept the streets of Gotham City. It is now up to the Batman Family to protect Gotham.</h5></div></div>
     </div>
-
-
 
     <div class="new_top_soon">
         <div class="new">
             <ul>
                 <div class="header_newtopsoon">
                     <div><h3>New Releases</h3></div>
-                    <div class="more"><h4>View more</h4></div>
+                    <div class="more"><a href="product.html"><h4>View more</h4></a></div>
                 </div>
                 <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.trek.jpg" alt=""></div>
-                    <div class="text_game"><h3>Trek to Yomi</h3><div class="price_game"><h4>RON 76.99</h4></div></div></li>
-                    <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.silent.jpg" alt=""></div>
-                        <div class="text_game"><h3>The silent age</h3><div class="price_game"><h4>RON 38.99</h4></div></div></li>
+                    <div class="text_game"><h3>Trek to Yomi</h3><div class="price_game"><h4>RON 74</h4></div></div></li>
+                    <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.darklight.jpg" alt=""></div>
+                        <div class="text_game"><h3>Dark Light</h3><div class="price_game"><h4>RON 66</h4></div></div></li>
                         <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.etherborn.jpg" alt=""></div>
-                            <div class="text_game"><h3>Etherborn</h3><div class="price_game"><h4>RON 65.99</h4></div></div></li>
+                            <div class="text_game"><h3>Etherborn</h3><div class="price_game"><h4>RON 64</h4></div></div></li>
                             <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.ravenous.jpg" alt=""></div>
-                                <div class="text_game"><h3>Ravenous Devils</h3><div class="price_game"><h4>RON 18.99</h4></div></div></li>
+                                <div class="text_game"><h3>Ravenous Devils</h3><div class="price_game"><h4>RON 19</h4></div></div></li>
                                 <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.wonhon.jpg" alt=""></div>
-                                    <div class="text_game"><h3>Wonhon a vengeful spirit</h3><div class="price_game"><h4>RON 41.99</h4></div></div></li>
+                                    <div class="text_game"><h3>Wonhon a vengeful spirit</h3><div class="price_game"><h4>RON 41</h4></div></div></li>
             </ul>
         </div>
         <div class="top">
             <ul>
                 <div class="header_newtopsoon">
                     <div><h3>Top Sellers</h3></div>
-                    <div class="more"><h4>View more</h4></div>
+                    <div class="more"><a href="product.html"><h4>View more</h4></a></div>
                 </div>
-                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.tina2.jpg" alt=""></div>
-                    <div class="text_game"><h3>Tiny Tina's Wonderlands</h3><div class="price_game"><h4>RON 289</h4></div></div></li>
-                    <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.rocket.jpg" alt=""></div>
+                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.farcry6.jpg" alt=""></div>
+                    <div class="text_game"><h3>Far Cry 6</h3><div class="price_game"><h4>RON 255</h4></div></div></li>
+                    <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.rocketleague.jpg" alt=""></div>
                         <div class="text_game"><h3>Rocket League</h3><div class="price_game"><h4>FREE</h4></div></div></li>
                         <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.salt2.jpg" alt=""></div>
-                            <div class="text_game"><h3>Salt and Sacrifice</h3><div class="price_game"><h4>RON 76.99</h4></div></div></li>
+                            <div class="text_game"><h3>Salt and Sacrifice</h3><div class="price_game"><h4>RON 52</h4></div></div></li>
                             <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.evildead.jpg" alt=""></div>
-                                <div class="text_game"><h3>Evil Dead</h3><div class="price_game"><h4>RON 114.99</h4></div></div></li>
-                                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.sifu2.jpg" alt=""></div>
-                                    <div class="text_game"><h3>Sifu</h3><div class="price_game"><h4>RON 153.99</h4></div></div></li>
+                                <div class="text_game"><h3>Evil Dead</h3><div class="price_game"><h4>RON 115</h4></div></div></li>
+                                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.reddead2.jpg" alt=""></div>
+                                    <div class="text_game"><h3>Red dead redemption</h3><div class="price_game"><h4>RON 245</h4></div></div></li>
             </ul>
         </div>
         <div class="soon"><ul>
             <div class="header_newtopsoon">
                 <div><h3>Coming Soon</h3></div>
-                <div class="more"><h4>View more</h4></div>
+                <div class="more"><a href="product.html"><h4>View more</h4></a></div>
             </div>
-            <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.tangle.jpg" alt=""></div>
-                <div class="text_game"><h3>Tangle Tower</h3><div class="price_game"><h4>Available 07/12/22</h4></div></div></li>
-                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.taleofpaper.jpg" alt=""></div>
-                    <div class="text_game"><h3>A tale of paper</h3><div class="price_game"><h4>Available 08/11/22</h4></div></div></li>
+            <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.marvelmidnight.jpg" alt=""></div>
+                <div class="text_game"><h3>Marvel: Midnight Suns</h3><div class="price_game"><h4>Available 10/07/22</h4></div></div></li>
+                <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.aplaguetale.jpg" alt=""></div>
+                    <div class="text_game"><h3>A plague tale: Requiem</h3><div class="price_game"><h4>Available 10/18/22</h4></div></div></li>
                     <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.lamenlum.jpg" alt=""></div>
                         <div class="text_game"><h3>Lamentum</h3><div class="price_game"><h4>Available 08/25/22</h4></div></div></li>
                         <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.alaskan.jpg" alt=""></div>
                             <div class="text_game"><h3>Alaskan Truck simulator</h3><div class="price_game"><h4>Available 08/03/22</h4></div></div></li>
-                            <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.beacon.jpg" alt=""></div>
-                                <div class="text_game"><h3>Beacon Pines</h3><div class="price_game"><h4>Available 08/19/22</h4></div></div></li>
+                            <li class="game_list1 white_color"><div class="img_game"><img src="/img/game.spiderman.jpg" alt=""></div>
+                                <div class="text_game"><h3>Marvel: Spider-man</h3><div class="price_game"><h4>Available 08/12/22</h4></div></div></li>
         </ul></div>
     </div>
+
+    <div class="carrousel2"><section id="container_carrousel_2">
+        <section id="button_section">
+            <h3>Recently updated :</h3>
+            <!-- <div>
+                <button type="button" class="game_button" id="prevBtn">
+                    <h4>Previous</h4>
+                </button>
+                <button type="button" class="game_button" id="nextBtn">
+                    <h4>Next</h4>
+                </button>
+            </div> -->
+        </section>
+        <section class="game_carrousel_2"></section>
+    </section></div>
+
+
+
+    
     <div class="banner">
         <div class="banner_img game_image"></div>
         <div class="banner_text">
             <h2>Explore our Catalog</h2>
             <h4>Browse by genre, features and price to find your next favorite game.</h4>
-            <div class="learn"><h4>Learn more</h4></div>
+            <div class="learn game_image"><a href="product.html"><h4>Learn more</h4></a></div>
         </div>
     </div>
+
     <footer>
         <div class="footer">
             <div class="about">
@@ -302,9 +304,9 @@
             <div class="social">
                 <ul>
                     <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="facebook"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="instagram"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="twitter"></a></li>
-                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="youtube"></a></li>
+                    <li><a href=""><img src="./img/logo.insta.png" width="30px" alt="instagram"></a></li>
+                    <li><a href=""><img src="./img/logo.twitter.png" width="30px" alt="twitter"></a></li>
+                    <li><a href=""><img src="./img/logo.youtube.png" width="30px" alt="youtube"></a></li>
                 </ul>
             </div>
         </div>
@@ -312,5 +314,7 @@
     <script src="home.js" type="module"></script>
     <script src="sign.js"></script>
     <script src="all.js"></script>
+    <script src="cartArray.js"></script>
+    <script src="hero.js" type="module"></script>
 </body>
 </html>

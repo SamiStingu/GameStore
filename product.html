@@ -12,93 +12,62 @@
 <body onload="generateGames(games)">
     <div class="header1">
         <div class="nav1">
-            <nav>
-                <ul>
-                    <a href="home.html"><img src="img/logo4.png" width="50px" alt="logo"></a>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>STORE</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>FAQ</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                    <div class="header1_li1"><a href="" style="text-decoration: none;">
-                            <li>
-                                <p>HELP</p>
-                            </li>
-                        </a>
-                        <div class="header1_li2"></div>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav2">
-            <nav>
-                <ul>
-                    <div><a href="">
-                            <li><img src="img/logo33.png" width="15px" alt="logo"></li>
-                        </a></div>
-                    <div class="opacity"><a href="sign_up.html" style="text-decoration: none;">
-                            <li>
-                                <p>REGISTER</p>
-                            </li>
-                        </a></div>
-                    <div class="opacity"><a href="sign_in.html" style="text-decoration: none;">
-                            <li>
-                                <p>LOG IN</p>
-                            </li>
-                        </a></div>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="header2">
-        <div class="nav3">
-            <nav>
-                <ul>
-                    <!-- <div><input type="search" name="search" placeholder="Search" style="color: white"></div> -->
-                    <div class="white_color"><a href="home.html" style="text-decoration: none;">
-                            <li>
-                                <h5>Home</h5>
-                            </li>
-                        </a></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
-                            <li>
-                                <h5>Browse</h5>
-                            </li>
-                        </a></div>
-                    <div class="white_color"><a href="" style="text-decoration: none;">
-                            <li>
-                                <h5>News</h5>
-                            </li>
-                        </a></div>
-                </ul>
-            </nav>
-            <div class="nav4">
-                <nav>
-                    <ul>
-                        <div class="white_color"><a href="library.html" style="text-decoration: none;">
-                                <li>
-                                    <h5>Library</h5>
-                                </li>
-                            </a></div>
-                        <div class="white_color"><a href="cart.html" style="text-decoration: none;">
-                                <li>
-                                    <h5>Cart </h5>
-                                </li>
-                            </a></div>
-                    </ul>
-                </nav>
+        <nav>
+            <ul >
+                <a href="home.html" class="logo"><img src="img/logo4.png" width="50px" alt="logo"></a>
+                <div class="header1_li1" ><a href="product.html" style="text-decoration: none;" ><li><p>STORE</p></li></a>
+                <div class="header1_li2"></div>
             </div>
-        </div>
+                <div class="header1_li1"><a href="" style="text-decoration: none;" ><li><p>FAQ</p></li></a>
+                    <div class="header1_li2"></div></div>
+                <div class="header1_li1"><a href="" style="text-decoration: none;" ><li><p>HELP</p></li></a>
+                    <div class="header1_li2"></div></div>
+                   <div class="dropdown">
+                    <button class="dropbtn"><h3>≡ Menu</h3></button>
+                    <div class="dropdown_content">
+                        <a clas href="home.html"> <h4>Home</h4></a>
+                        <a href="product.html"> <h4>Browse</h4></a>
+                        <a href="library.html"> <h4>Library</h4></a>
+                        <a href="news.html"> <h4>News</h4></a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
     </div>
+        <div class="nav2">
+        <nav>
+            <ul>
+                <div><a href=""><li><img src="img/logo33.png" width="15px" alt="logo"></li></a></div>
+                <div class="opacity" id="register_blue"><a href="" style="text-decoration: none;" ><li><p id="register_name"></p></li></a></div>
+                <div class="opacity"><a href="" style="text-decoration: none;" ><li><p id="login_logout"></p></li></a></div>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="header2">
+    <div class="nav3">
+    <nav>
+        <ul >
+            <!-- <div class="search_bar">
+                <div><button type="submit" id="header_search_btn"><i class="fa fa-search"></i></button></div>
+                <div><input type="text" id="header_search"  name="search" placeholder="Search" style="color: white"></div>
+            </div> -->
+            <div class="white_color" id="home"><a href="home.html" style="text-decoration: none;" ><li><h5>Home</h5></li></a></div>
+            <div class="white_color" id="browse"><a href="product.html" style="text-decoration: none;" ><li><h5>Browse</h5></li></a></div>
+            <div class="white_color" id="news"><a href="news.html" style="text-decoration: none;" ><li><h5>News</h5></li></a></div>
+        </ul>
+    </nav>
+    <div class="nav4">
+        <nav>
+            <ul>
+            <div class="white_color" id="library"><a href="library.html" style="text-decoration: none;" ><li><h5>Library</h5></li></a></div>
+            <div class="white_color" id="cart"><a href="cart.html" style="text-decoration: none;" ><li><h5>Cart <span id="cart_number"></span></h5></li></a></div>
+            </ul>
+        </nav>
+    </div>
+</div>
+</div>
+<div class="header_hero"></div>
     <section class="product_container">
         <section id="filter_section">
             <div id="filter_section_header">
@@ -145,52 +114,52 @@
                     <ul>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Action</h4>
+                                <h4 id="action">Action</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Adventure</h4>
+                                <h4 id="adventure">Adventure</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Exploration</h4>
+                                <h4 id="exploration">Exploration</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Indie</h4>
+                                <h4 id="indie">Indie</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Stealth</h4>
+                                <h4 id="stealth">Stealth</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Party</h4>
+                                <h4 id="party">Party</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Horror</h4>
+                                <h4 id="horror">Horror</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Puzzle</h4>
+                                <h4 id="puzzle">Puzzle</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Strategy</h4>
+                                <h4 id="strategy">Strategy</h4>
                             </div>
                         </li>
                         <li>
                             <div class="filter_element white_color">
-                                <h4>Sports</h4>
+                                <h4 id="sports">Sports</h4>
                             </div>
                         </li>
                     </ul>
@@ -226,7 +195,7 @@
                         <option value="price_asc">Rising Price</option>
                         <option value="price_dsc">Decreasing Price</option>
                     </select></div>
-                <div>
+                <div id="buttons">
                     <button type="button" class="game_button" id="prevBtn">
                         <h4>Previous</h4>
                     </button>
@@ -238,11 +207,49 @@
             <section id="game_section"></section>
         </section>
     </section>
+    <script src="all.js"></script>
     <script src="collapsible.js"></script>
     <script src="product.js" type="module"></script>
     <script src="cartArray.js"></script>
-    <!-- <script src="cartHold.js"></script> -->
-    <script src="all.js"></script>
+
+    <footer>
+        <div class="footer">
+            <div class="about">
+                <ul>
+                    <li><h4>About us</h4></li>
+                    <li><a href="">Our story</a></li>
+                    <li><a href="">Awards</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </div>
+            <div class="news">
+                <ul>
+                    <li><h4>News</h4></li>
+                    <li><a href="">Updates</a></li>
+                    <li><a href="">Rumors</a></li>
+                    <li><a href="">Release dates</a></li>
+                </ul>
+            </div>
+            <div class="Resources">
+                <ul>
+                    <li><h4>Resources</h4></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Community Rules</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href=""><img src="./img/logo.facebook.png" width="30px" alt="facebook"></a></li>
+                    <li><a href=""><img src="./img/logo.insta.png" width="30px" alt="instagram"></a></li>
+                    <li><a href=""><img src="./img/logo.twitter.png" width="30px" alt="twitter"></a></li>
+                    <li><a href=""><img src="./img/logo.youtube.png" width="30px" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

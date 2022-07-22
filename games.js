@@ -296,13 +296,13 @@ export let games = [{
         
     },
     {
-        "title": "Red Dead Redemption 2",
-        "price": 245,
-        "genre": ["action"],
-        "rating": 4.9,
-        "image": "./img/game.reddead2.jpg",
-        "trailer": "https://www.youtube.com/embed/eaW0tYpxyp0",
-        "id" : 30,
+        "title": "Schein",
+        "price": 6,
+        "genre": ["adventure", "exploration", "indie"],
+        "rating": 3.2,
+        "image": "./img/game.schein.jpg",
+        "trailer": "https://www.youtube.com/embed/PHeVR5HYUuY",
+        "id" : 53,
         "class" : "game_details"
     },
     {
@@ -431,7 +431,7 @@ export let games = [{
         "genre": ["action"],
         "rating": 4.2,
         "image": "./img/game.narakabladepoint.jpg",
-        "trailer": "https://www.youtube.com/embed/Q_uBBXiqL1s",
+        "trailer": "https://www.youtube.com/embed/rE5hD3eDs1Y",
         "id" : 40,
         "class" : "game_details"
     },
@@ -476,6 +476,36 @@ export let games = [{
         "class" : "game_details"
     },
     {
+        "title": "Wonhon: A Vengeful Spirit",
+        "price": 41,
+        "genre": ["adventure", "indie", "action"],
+        "rating": 3.5,
+        "image": "./img/game.wonhon.jpg",
+        "trailer": "https://www.youtube.com/embed/tT9rie571PE",
+        "id" : 51,
+        "class" : "game_details"
+    },
+    {
+        "title": "Tiny Tina's Wonderlands",
+        "price": 216,
+        "genre": ["action", "adventure"],
+        "rating": 4.7,
+        "image": "./img/game.tina2.jpg",
+        "trailer": "https://www.youtube.com/embed/3gJgj2ngCyA",
+        "id" : 49,
+        "class" : "game_details"
+    },
+    {
+        "title": "Child of Light",
+        "price": 97,
+        "genre": ["adventure"],
+        "rating": 4.5,
+        "image": "./img/game.childoflight.jpg",
+        "trailer": "https://www.youtube.com/embed/PaxrIFlc6E4",
+        "id" : 50,
+        "class" : "game_details"
+    },
+    {
         "title": "Syberia: The world before",
         "price": 153,
         "genre": ["puzzle", "exploration"],
@@ -483,6 +513,96 @@ export let games = [{
         "image": "./img/game.syberia.jpg",
         "trailer": "https://www.youtube.com/embed/wrYdQIRXJCg",
         "id" : 48,
+        "class" : "game_details"
+    },
+    {
+        "title": "LEGO: The Skywalker Saga",
+        "price": 235,
+        "genre": ["adventure", "action"],
+        "rating": 4.9,
+        "image": "./img/game.starwars2.jpg",
+        "trailer": "https://www.youtube.com/embed/aQzaHi0CwRQ",
+        "id" : 52,
+        "class" : "game_details"
+    },
+    {
+        "title": "Red Dead Redemption 2",
+        "price": 245,
+        "genre": ["action"],
+        "rating": 4.9,
+        "image": "./img/game.reddead2.jpg",
+        "trailer": "https://www.youtube.com/embed/eaW0tYpxyp0",
+        "id" : 30,
+        "class" : "game_details"
+    },
+    {
+        "title": "Etherborn",
+        "price": 64,
+        "genre": ["puzzle", "exploration", "adventure"],
+        "rating": 3.5,
+        "image": "./img/game.etherborn.jpg",
+        "trailer": "https://www.youtube.com/embed/2LoWtkDKNxs",
+        "id" : 54,
+        "class" : "game_details"
+    },
+    {
+        "title": "Total War: WARHAMMER III",
+        "price": 245,
+        "genre": ["action", "stealth", "strategy"],
+        "rating": 4.5,
+        "image": "./img/game.warhammer.jpg",
+        "trailer": "https://www.youtube.com/embed/qtITQM0fgmU",
+        "id" : 55,
+        "class" : "game_details"
+    },
+    {
+        "title": "Fortnite",
+        "price": 0,
+        "genre": ["action", "stealth", "strategy"],
+        "rating": 4.2,
+        "image": "./img/game.fortnite.jpg",
+        "trailer": "https://www.youtube.com/embed/LqK2woAKDUw",
+        "id" : 56,
+        "class" : "game_details"
+    },
+    {
+        "title": "Evil Dead: The Game",
+        "price": 115,
+        "genre": ["action", "stealth", "horror"],
+        "rating": 4.4,
+        "image": "./img/game.evildead.jpg",
+        "trailer": "https://www.youtube.com/embed/hfywdHmixJs",
+        "id" : 57,
+        "class" : "game_details"
+    },
+    {
+        "title": "Salt and Sacrifice",
+        "price": 52,
+        "genre": ["strategy", "stealth", "horror"],
+        "rating": 4.3,
+        "image": "./img/game.salt2.jpg",
+        "trailer": "https://www.youtube.com/embed/ZnBkp9ascxc",
+        "id" : 58,
+        "class" : "game_details"
+    },
+    {
+        "title": "Vampire: The Masquerade",
+        "price": 190,
+        "genre": ["exploration", "stealth", "horror"],
+        "rating": 4.1,
+        "image": "./img/game.vampire2.jpg",
+        "trailer": "https://www.youtube.com/embed/SNrxn362daU",
+        "id" : 59,
+        "class" : "game_details"
+    },
+    {
+        "title": "Valorant",
+        "price": 0,
+        "genre": ["action", "party"],
+        "rating": 4.6,
+        "image": "./img/game.valorant2.jpg",
+        "trailer": "https://www.youtube.com/embed/e_E9W2vsRbQ",
+        "id" : 60,
         "class" : "game_details"
     },
 

@@ -3,7 +3,19 @@ window.onload = generateGames(games.slice(0, 12));
 import {
     games
 } from "./games.js";
+window.onload = addToCart();
 
+// Add to cart
+function addToCart() {
+    const cart_item = document.getElementById('cart_number');
+    let holdArray = JSON.parse(window.localStorage.getItem('cart'));
+    if(holdArray) {
+        if(holdArray.length >= 1) {
+        cart_item.setAttribute('class', 'cartHoldItem');
+        cart_item.innerHTML = holdArray.length;
+    }
+    }
+}
 
 
 // Creare articol
@@ -48,11 +60,22 @@ function createGame(gameImg, gameTitle, gamePrice, id, gameClass) {
 
     // Adaugare in cart
     cart.addEventListener('click', (event) => {
+        let cart_localestorage = JSON.parse(window.localStorage.getItem('cart'));
         let holded = event.target.parentElement.id;
         var holded2 = games.find(element => element.id == holded);
-        cartHold.push(holded2);
-        window.localStorage.setItem('cart', JSON.stringify(cartHold));
-    })
+    if(cart_localestorage < 1) {
+    cartHold.push(holded2);
+    window.localStorage.setItem('cart', JSON.stringify(cartHold));
+    }else {
+        cart_localestorage.push(holded2);
+        window.localStorage.setItem('cart', JSON.stringify(cart_localestorage));
+        
+    }
+    addToCart();
+    cart.style.backgroundColor = '#2A2A2A';
+    cart.innerHTML = "Added to cart";
+
+    }, {once : true});
 }
 
 
@@ -152,18 +175,39 @@ sortPrice.addEventListener('click', (event) => {
     generateGames(sortedGames);
 })
 // Filtrare by genre
+//   const sortGenre = document.getElementById('content_genre');
+//   sortGenre.addEventListener('click', (event) => {
+//     let input = event.target.textContent;
+//     let sortedGames = [];
+//     console.log(input);
+//     if(input.trim().toUpperCase() == 'ACTION') {
+//         var actionGenre = games.filter((games) => games.genre.includes(input.trim().toLowerCase()))
+//         sortedGames = [...sortedGames, ...actionGenre]
+//         const action = document.querySelector('#action');
+//         action.style.color = 'white'
+//     }
+//     if(input.trim().toUpperCase() == 'ADVENTURE') {
+//         let adventureGenre = games.filter((games) => games.genre.includes(input.trim().toLowerCase()))
+//         sortedGames = [...sortedGames, ...adventureGenre]
+//         const adventure = document.querySelector('#adventure');
+//         adventure.style.color = 'white'
+//     }
+//     generateGames(sortedGames);
+//   })
 const sortGenre = document.getElementById('content_genre');
 sortGenre.addEventListener('click', (event) => {
     const input = event.target.textContent;
-    let sortedGames;
+    let sortedGames = [];
     switch (input.trim().toUpperCase()) {
         case 'ACTION':
             sortedGames = games.filter((games) =>
             games.genre.includes('action'));
+            // sortedGames = [...sortedGames, ...sortedGames1]
             break;
         case 'ADVENTURE':
             sortedGames = games.filter((games) =>
             games.genre.includes('adventure'));
+            // sortedGames = [...sortedGames, ...sortedGames2]
             break;
         case 'EXPLORATION':
             sortedGames = games.filter((games) =>
@@ -200,6 +244,7 @@ sortGenre.addEventListener('click', (event) => {
     }
     generateGames(sortedGames);
 })
+
 // Sortare by rating
 const sortRating = document.getElementById('content_rating');
 sortRating.addEventListener('click', (event) => {
@@ -219,20 +264,6 @@ sortRating.addEventListener('click', (event) => {
 // Paginare
 const prevBtn =document.querySelector('#prevBtn');
 const nextBtn =document.querySelector('#nextBtn');
-// const firstPg = games.slice(0, 16);
-// const secondPg = games.slice(16);
-
-// nextBtn.addEventListener('click', () => {
-//     generateGames(secondPg);
-//     nextBtn.setAttribute('disabled', true)
-//     prevBtn.removeAttribute('disabled');
-// })
-
-// prevBtn.addEventListener('click', () => {
-//     generateGames(firstPg);
-//     prevBtn.setAttribute('disabled', true)
-//     nextBtn.removeAttribute('disabled');
-// })
 let contor = 0;
 
 nextBtn.addEventListener('click', () => {
